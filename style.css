@@ -8,6 +8,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    font-size: clamp(14px, 2.5vw, 16px);
+    line-height: 1.6;
 }
 
 html {
@@ -15,12 +17,20 @@ html {
 }
 
 p {
-    color: rgb(85, 85, 85)
+    color: rgb(85, 85, 85);
+    line-height: 1.7;
+    max-width: 70ch;
 }
 
 a,
 .btn {
     transition: all 300ms ease;
+}
+
+/* IMAGES RESPONSIVE */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* DESKTOP NAV */
@@ -158,6 +168,9 @@ a {
     margin: 5px 10px;
     position: relative;
     overflow: hidden;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
 }
 
 .menu-links a::before {
@@ -399,6 +412,22 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .btn_container {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
 }
 
 .btn {
@@ -930,6 +959,25 @@ section {
     .contact-left,
     .contact-right {
         flex: 1 1 100%;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        min-height: 44px;
+    }
+
+    .contact-right textarea {
+        min-height: 120px;
+    }
+
+    .btn-submit {
+        width: 100%;
+        padding: 1.2rem;
+        font-size: 1.1rem;
+        min-height: 50px;
     }
 }
 
@@ -1968,6 +2016,54 @@ body.dark-mode .closing-line {
     .box-area {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-area {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content,
+    .timeline-item:nth-child(odd) .timeline-content {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-marker {
+        left: 20px;
     }
 }
 
