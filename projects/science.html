@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="../mediaqueries.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="manifest" href="../assets/site.webmanifest">
+
+</head>
+
+<body>
+    <!-- Desktop Navbar -->
+    <nav id="desktop-nav">
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#machine-learning-ai">Machine Learning & AI</a></li>
+            <li><a href="../index.html#projects">Projects&nbsp;&amp;&nbsp;Blogs</a></li>
+            <li><a href="../index.html#experience">Tools&nbsp;&amp;&nbsp;Skills</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hamburger Navbar -->
+    <nav id="hamburger-nav">
+        <div class="hamburger-wrapper">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="../index.html" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="../index.html#projects" onclick="toggleMenu()">Projects&nbsp;&amp;&nbsp;Blogs</a></li>
+                    <li><a href="../index.html#experience" onclick="toggleMenu()">Tools&nbsp;&amp;&nbsp;Skills</a></li>
+                    <li><a href="../index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="../index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navback Projects Page -->
+    <div class="navback-projects-page">
+        <a href="../index.html" class="back-button">Home</a>&nbsp;
+        <a href="#" class="nav-back-button">>></a>&nbsp;
+        <a href="#top" class="back-button">Machine Learning & AI</a>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button-container">
+        <a href="../index.html#projects" class="back-btn">← Back to Categories</a>
+    </div>
+
+    <section class="section-projects-page">
+        <p class="section__text_p1">Machine Learning & AI</p>
+        <p class="intro-projects-page">
+            <br>
+            Explore the forefront of artificial intelligence and machine learning with projects that harness predictive analytics, statistical modeling, and advanced algorithms. Utilizing powerful tools such as scikit-learn, XGBoost, R, and MLflow, these projects address real-world challenges from customer behavior prediction to fraud detection. Each project is designed to showcase practical applications of AI, featuring interactive elements and visual previews to illustrate outcomes. Hover over the project cards for quick access to demos and GitHub repositories to dive deeper into the code and methodologies.
+        </p>
+        <div class="wrapper-projects-page">
+            <div class="item-projects-page" style="background-image: url(../assets/B2Bfintech.jpg);">
+                <div class="desc-projects-page">
+                    <h3>AI-Powered B2B Fintech Invoice Management App</h3>
+                    <p>Developed an AI-driven application for managing B2B invoices in the fintech sector, automating processing and analysis.</p>
+                    <div class="buttons-projects-page">
+                        <a href="https://github.com/o-zab/AI_PoweredB2B_Fintech_Invoice_Management_App" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-projects-page" style="background-image: url(../assets/breastcancer.jpg);">
+                <div class="desc-projects-page">
+                    <h3>Breast Cancer Prediction Model</h3>
+                    <p>Built ML models to predict breast cancer using medical data and diagnostic features for early detection.</p>
+                    <div class="buttons-projects-page">
+                        <a href="https://github.com/o-zab/Breast_Cancer_Prediction_Model" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-projects-page" style="background-image: url(../assets/creditfraud.png);">
+                <div class="desc-projects-page">
+                    <h3>Credit Card Fraud Detection Model</h3>
+                    <p>Implemented ML algorithms for detecting fraudulent credit card transactions in real-time to enhance security.</p>
+                    <div class="buttons-projects-page">
+                        <a href="https://github.com/o-zab/Credit-Card-Fraud-Detection-Model" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <nav id="footer-nav">
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#projects">Projects&nbsp;&amp;&nbsp;Blogs</a></li>
+                    <li><a href="../index.html#experience">Tools&nbsp;&amp;&nbsp;Skills</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="footer-paragraph">
+            <p>Copyright &copy; <span id="current-year"></span></p>
+            <p>Designed by Zablon Owino</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

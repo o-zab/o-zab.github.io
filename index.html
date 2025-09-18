@@ -1,0 +1,744 @@
+ ,
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zablon Owino - Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Zablon Owino - Data Analyst, Data Scientist, Data Engineer, and Solutions Architect. Explore my portfolio of data analysis, data science, and data engineering projects.">
+    <meta name="keywords" content="Zablon Owino, Data Analyst, Data Scientist, Data Engineer, Solutions Architect, Portfolio, Python, R, Machine Learning">
+    <meta name="author" content="Zablon Owino">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Zablon Owino - Portfolio">
+    <meta property="og:description" content="Data Analyst, Data Scientist, Data Engineer, and Solutions Architect. Explore my portfolio of data projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://o-zab.github.io">
+    <meta property="og:image" content="https://o-zab.github.io/assets/profile_pic.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zablon Owino - Portfolio">
+    <meta name="twitter:description" content="Data Analyst, Data Scientist, Data Engineer, and Solutions Architect">
+    <meta name="twitter:image" content="https://o-zab.github.io/assets/profile_pic.jpg">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="new-styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Zablon Owino",
+        "jobTitle": ["Data Analyst", "Data Scientist", "Data Engineer", "Solutions Architect"],
+        "url": "https://o-zab.github.io",
+        "image": "https://o-zab.github.io/assets/profile_pic.jpg",
+        "sameAs": [
+            "https://www.linkedin.com/in/zablon-owino-b034b61a7",
+            "https://github.com/o-zab",
+            "https://ozab.substack.com/"
+        ],
+        "knowsAbout": ["Data Analysis", "Data Science", "Data Engineering", "Python", "R", "Machine Learning", "Statistical Analysis"],
+        "alumniOf": {
+            "@type": "Organization",
+            "name": "University of Nairobi"
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Desktop Navbar -->
+    <nav id="desktop-nav">
+        <ul class="nav-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hamburger Navbar -->
+    <nav id="hamburger-nav">
+        <div class="hamburger-wrapper">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#top" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+                    <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Theme Toggle -->
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+    </div>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile_pic.jpg" alt="Zablon Owino profile photo">
+        </div>
+            <div class="section__text">
+                <p class="section__text_p1">Hello, I'm</p>
+                <h1 class="title" itemscope itemtype="https://schema.org/Person">
+                    <span itemprop="name">Zablon Owino</span>
+                </h1>
+                <p class="static-title">Data Specialist</p>
+                <div class="btn_container">
+                    <button class="btn btn-color-2" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1ERelEmOjb6aAWUlHKCrFiYV35qAF_pmv'">
+                        Resume
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">
+                        Contact Me
+                    </button>
+                </div>
+                <div id="socials_container">
+                    <a href="https://www.linkedin.com/in/zablon-owino-b034b61a7" target="_blank">
+                        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon">
+                    </a>
+                    <a href="https://github.com/o-zab" target="_blank">
+                        <img src="./assets/github.png" alt="My GitHub profile" class="icon">
+                    </a>
+                    <a href="https://ozab.substack.com/" target="_blank">
+                        <img src="./assets/substack_logo_icon.png" alt="My Substack profile" class="icon">
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <h1 class="title">Projects</h1>
+            <p class="section-subtitle">Crafting data solutions across domains</p>
+        </div>
+
+        <!-- Category Overview -->
+        <div id="categories-overview" class="categories-grid">
+            <a href="projects/analytics.html" class="category-card">
+                <img src="./assets/Analytics&Bi.png" alt="Analytics & BI Preview" class="category-preview">
+                <h3>Analytics & BI</h3>
+                <p>Business intelligence and data analysis projects delivering actionable insights</p>
+            </a>
+            <a href="projects/science.html" class="category-card">
+                <img src="./assets/Machinelearning&AI.png" alt="Machine Learning & AI Preview" class="category-preview">
+                <h3>Machine Learning & AI</h3>
+                <p>AI-powered solutions and predictive modeling for various industries</p>
+            </a>
+            <a href="projects/engineering.html" class="category-card">
+                <img src="./assets/cloud-data-engineer.webp" alt="Data Engineering & Cloud Preview" class="category-preview">
+                <h3>Data Engineering & Cloud</h3>
+                <p>Scalable data pipelines and cloud infrastructure solutions</p>
+            </a>
+            <a href="iot.html" class="category-card">
+                <img src="./assets/Iot&RealtimeSystems.webp" alt="IoT & Real-time Systems Preview" class="category-preview">
+                <h3>IoT & Real-time Systems</h3>
+                <p>Real-time data processing and IoT applications</p>
+            </a>
+        </div>
+
+        <!-- Analytics & BI Projects -->
+        <div id="analytics-bi" class="category-section" style="display: none;">
+            <button class="back-btn" onclick="showCategories()">← Back to Categories</button>
+            <h2>Analytics & BI Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/aws_heroes.png" alt="AWS Heroes Visualization">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">AWS Heroes Visualization</h3>
+                        <p class="problem-statement"><em>Lack of comprehensive visualization for AWS Heroes community distribution and growth trends.</em></p>
+                        <div class="approach">
+                            <strong>Approach:</strong> Collected AWS Heroes data and created interactive Power BI dashboards with drill-down capabilities.
+                        </div>
+                        <div class="outcome">
+                            <strong>Outcome:</strong> Real-time dashboard showing 500+ Heroes across 50+ countries with regional insights and community growth metrics.
+                        </div>
+                        <div class="technologies">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/o-zab/aws-viz" target="_blank" class="btn-code">Code</a>
+                            <a href="#" target="_blank" class="btn-live">Live</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/kq-ratings-reviews.gif" alt="Kenya Airways Analytics">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Kenya Airways Analytics</h3>
+                        <p class="problem-statement"><em>Need to analyze customer satisfaction from 471 airline reviews spanning 13 years.</em></p>
+                        <div class="approach">
+                            <strong>Approach:</strong> Applied NLP techniques for sentiment analysis using Python and visualized results in Power BI.
+                        </div>
+                        <div class="outcome">
+                            <strong>Outcome:</strong> Identified key pain points and service improvement areas with 95% accuracy, revealing customer satisfaction trends.
+                        </div>
+                        <div class="technologies">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Power BI</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/o-zab/kenya-airways-analytics" target="_blank" class="btn-code">Code</a>
+                            <a href="#" target="_blank" class="btn-live">Live</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/bank-debt-recovery.gif" alt="Debt Recovery Optimization">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Debt Recovery Optimization</h3>
+                        <p class="problem-statement"><em>Optimize debt recovery strategies for $1.8M portfolio across 1,882 accounts.</em></p>
+                        <div class="approach">
+                            <strong>Approach:</strong> Analyzed debt collection data using Tableau dashboards with risk assessment and portfolio segmentation.
+                        </div>
+                        <div class="outcome">
+                            <strong>Outcome:</strong> Identified optimal recovery approaches resulting in 15% increase in recovery rates.
+                        </div>
+                        <div class="technologies">
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://public.tableau.com/views/Debt-Collection-Strategies/Debt-Recovery-Strategy-Viz" target="_blank" class="btn-code">Code</a>
+                            <a href="#" target="_blank" class="btn-live">Live</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/aws_community_builders.png" alt="AWS Skill Builder Analytics">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">AWS Skill Builder Analytics</h3>
+                        <p class="problem-statement"><em>Understand learning patterns and skill development trends in AWS Community Builders program.</em></p>
+                        <div class="approach">
+                            <strong>Approach:</strong> Analyzed program data using Power BI to track certifications, regional participation, and technology adoption.
+                        </div>
+                        <div class="outcome">
+                            <strong>Outcome:</strong> Provided global insights on AWS learning patterns and community growth across different regions.
+                        </div>
+                        <div class="technologies">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/o-zab/aws-viz" target="_blank" class="btn-code">Code</a>
+                            <a href="#" target="_blank" class="btn-live">Live</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/ifood-app.gif" alt="iFood Marketing ML">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">iFood Marketing ML</h3>
+                        <p class="problem-statement"><em>Predict customer response to marketing campaigns for targeted advertising.</em></p>
+                        <div class="approach">
+                            <strong>Approach:</strong> Built ML models using scikit-learn and deployed interactive Streamlit app for real-time predictions.
+                        </div>
+                        <div class="outcome">
+                            <strong>Outcome:</strong> Achieved 80% prediction accuracy, enabling data-driven marketing strategies.
+                        </div>
+                        <div class="technologies">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/o-zab/customer-response-app" target="_blank" class="btn-code">Code</a>
+                            <a href="#" target="_blank" class="btn-live">Live</a>
+                        </div>
+                    </div>
+                </article>
+
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <p class="section__text_p1">My</p>
+        <h1 class="title">Skills</h1>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2 class="experience-sub-title">Data Analysis & Visualization</h2>
+                        <div class="logo-container">
+                            <img src="./assets/python_logo.png" alt="Python" class="logo-img">
+                            <img src="./assets/pandas_logo.png" alt="Pandas" class="logo-img">
+                            <img src="./assets/numpy_logo.png" alt="NumPy" class="logo-img">
+                            <img src="./assets/power_bi_logo.png" alt="Power BI" class="logo-img">
+                            <img src="./assets/tableau_logo.png" alt="Tableau" class="logo-img">
+                            <img src="./assets/excel_logo.png" alt="Excel" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2 class="experience-sub-title">Data Engineering</h2>
+                        <div class="logo-container">
+                            <img src="./assets/pyspark_logo.png" alt="Apache Spark" class="logo-img">
+                            <img src="./assets/kafka_logo.png" alt="Kafka" class="logo-img">
+                            <img src="./assets/airflow_logo.png" alt="Airflow" class="logo-img">
+                            <img src="./assets/dbt_logo.png" alt="dbt" class="logo-img">
+                            <img src="./assets/docker_logo.png" alt="Docker" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2 class="experience-sub-title">Machine Learning & AI</h2>
+                        <div class="logo-container">
+                            <img src="./assets/scikitlearn_logo.png" alt="Scikit-learn" class="logo-img">
+                            <img src="./assets/tensorflow_logo.png" alt="TensorFlow" class="logo-img">
+                            <img src="./assets/pytorch_logo.png" alt="PyTorch" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2 class="experience-sub-title">Cloud & DevOps</h2>
+                        <div class="logo-container">
+                            <img src="./assets/aws_logo.png" alt="AWS" class="logo-img">
+                            <img src="./assets/gcp_logo.png" alt="Google Cloud" class="logo-img">
+                            <img src="./assets/terraform_logo.png" alt="Terraform" class="logo-img">
+                            <img src="./assets/github_action_logo.png" alt="GitHub Actions" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2 class="experience-sub-title">Programming & Tools</h2>
+                        <div class="logo-container">
+                            <img src="./assets/r_logo.png" alt="R" class="logo-img">
+                            <img src="./assets/fastapi_logo.png" alt="FastAPI" class="logo-img">
+                            <img src="./assets/gitlogo.svg" alt="Git" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2 class="experience-sub-title">Big Data</h2>
+                        <div class="logo-container">
+                            <img src="./assets/hadoop_logo.png" alt="Hadoop" class="logo-img">
+                            <img src="./assets/databricks_logo.png" alt="Databricks" class="logo-img">
+                            <img src="./assets/prefect_logo.png" alt="Prefect" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2 class="experience-sub-title">Statistics & R</h2>
+                        <div class="logo-container">
+                            <img src="./assets/rstudio_logo.png" alt="RStudio" class="logo-img">
+                            <img src="./assets/spss_logo.png" alt="SPSS" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2 class="experience-sub-title">Databases</h2>
+                        <div class="logo-container">
+                            <img src="./assets/mysql_logo.png" alt="MySQL" class="logo-img">
+                            <img src="./assets/postgresql_logo.png" alt="PostgreSQL" class="logo-img">
+                            <img src="./assets/snowflake_logo.png" alt="Snowflake" class="logo-img">
+                            <img src="./assets/sql_server_logo.png" alt="SQL Server" class="logo-img">
+                            <img src="./assets/sqlalchemy_logo.png" alt="SQLAlchemy" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h2 class="experience-sub-title">Web Development</h2>
+                        <div class="logo-container">
+                            <img src="./assets/flask_logo.png" alt="Flask" class="logo-img">
+                            <img src="./assets/nginx_logo.png" alt="Nginx" class="logo-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <p class="section__text_p1">Professional</p>
+        <h1 class="title">Certifications</h1>
+
+        <div class="certifications-grid">
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <img src="./assets/gcp_logo.png" alt="Google Cloud Analytics Professional Certificate">
+                </div>
+                <div class="certification-content">
+                    <h3>Google Cloud Analytics Professional Certificate</h3>
+                    <p class="certification-issuer">Google Cloud</p>
+                    <p class="certification-date">Issued: Aug 27, 2025</p>
+                    <p class="certification-id">Credential ID: 6JZITMIOIFZR</p>
+                </div>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <img src="./assets/Google_logo.png" alt="Google Business Intelligence Certificate">
+                </div>
+                <div class="certification-content">
+                    <h3>Google Business Intelligence Certificate</h3>
+                    <p class="certification-issuer">Google</p>
+                    <p class="certification-date">Issued: June 28, 2025</p>
+                    <p class="certification-id">Credential ID: 7IWWUBHXHYQA</p>
+                </div>
+            </div>
+
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <img src="./assets/Google_logo.png" alt="Google Data Analytics Certificate">
+                </div>
+                <div class="certification-content">
+                    <h3>Google Data Analytics Certificate</h3>
+                    <p class="certification-issuer">Google</p>
+                    <p class="certification-date">Issued: Feb 21, 2025</p>
+                    <p class="certification-id">Credential ID: RYBJ4599ZA1Z</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <p class="section__text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Data Specialist (Freelance)</h3>
+                        <span class="timeline-duration">July 2025 – Present</span>
+                    </div>
+                    <div class="timeline-company">Freelance</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Partnered with small businesses and startups to design and implement data-driven solutions for decision support.</li>
+                            <li>Built automated reporting tools in Python and Excel, reducing manual reporting effort by up to 60%.</li>
+                            <li>Developed Power BI and Tableau dashboards to visualize sales, marketing, and financial KPIs, enabling faster strategic decisions.</li>
+                            <li>Conducted exploratory data analysis (EDA) on customer and operational data, uncovering insights that improved efficiency and profitability.</li>
+                            <li>Provided guidance on data management best practices, ensuring data quality, integrity, and usability across client systems.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Data Analyst Intern – Deloitte Australia (Job Simulation)</h3>
+                        <span class="timeline-duration">May 2025 – June 2025</span>
+                    </div>
+                    <div class="timeline-company">Deloitte Australia</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Built 3 interactive Tableau dashboards that improved visibility of financial trends for business managers.</li>
+                            <li>Classified and analyzed 5,000+ records in Excel, generating actionable insights for forensic technology use cases.</li>
+                            <li>Delivered data-driven recommendations from simulations, demonstrating ability to translate analytics into business decisions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Data Analyst Intern – Future Interns</h3>
+                        <span class="timeline-duration">May 2025 – July 2025</span>
+                    </div>
+                    <div class="timeline-company">Future Interns</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Cleaned and analyzed 100K+ real-world records using Python, SQL, and Excel, uncovering trends that informed decision-making.</li>
+                            <li>Automated exploratory analysis workflows, reducing analysis time by 40%.</li>
+                            <li>Presented insights through data storytelling sessions to non-technical audiences, improving understanding of business intelligence metrics.</li>
+                            <li>Collaborated with mentors on performance-tracking projects that strengthened business reporting accuracy.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>IT Systems & Infrastructure Engineer (Attachee) – Masinde Muliro University of Science and Technology</h3>
+                        <span class="timeline-duration">May 2023 – Aug 2023</span>
+                    </div>
+                    <div class="timeline-company">Masinde Muliro University of Science and Technology</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Configured and maintained computer hardware and networks for 200+ users across the university.</li>
+                            <li>Supported server administration tasks, including user account setup and file management, improving system reliability.</li>
+                            <li>Resolved 30+ IT support requests weekly, reducing downtime for staff and students.</li>
+                            <li>Assisted in developing small software utilities, gaining practical software development experience.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-header">
+                    <h1 class="title">About</h1>
+                    <p class="intro-line">Data artisan crafting insights from chaos.</p>
+                </div>
+            <div class="about-text">
+
+                <p>My journey in data began with a curiosity-driven exploration of analytics, evolving into a comprehensive expertise that bridges technical proficiency with strategic business insights. Starting as a data analyst, I progressed through roles in data engineering and solutions architecture, each step building upon the last to create a holistic approach to data-driven problem solving.</p>
+
+                <p>Over the past 1+ years, I've transformed raw data into actionable intelligence across healthcare, finance, agriculture, and e-commerce sectors. My work has directly contributed to revenue growth, operational efficiency improvements, and strategic decision-making for 15+ clients worldwide.</p>
+
+    
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Global Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Continents</span>
+                    </div>
+                </div>
+
+                <p class="closing-line">I'm passionate about leveraging data to drive meaningful impact and am always excited to collaborate on innovative projects that push the boundaries of what's possible with data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Highlights Section -->
+    <section id="blog">
+        <p class="section__text_p1">Latest</p>
+        <h1 class="title">Blog Highlights</h1>
+
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="./assets/AWS&GCP.jpg" alt="Building Scalable Data Lakes">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-date">March 15, 2024</span>
+                        <span class="blog-read-time">8 min read</span>
+                    </div>
+                    <h3>Building Scalable Data Lakes on AWS and GCP: A Comprehensive Guide</h3>
+                    <p>Master the art of building robust data lakes on major cloud platforms, covering architecture design, data ingestion, storage optimization, and security best practices.</p>
+                    <div class="blog-tags">
+                        <span>Data Engineering</span>
+                        <span>AWS</span>
+                        <span>GCP</span>
+                    </div>
+                </div>
+                <div class="blog-details">
+                    <p>This comprehensive guide explores the architecture of modern data lakes and demonstrates how to implement them on AWS and GCP. We'll cover data lake design patterns, cost optimization strategies, and real-world implementation scenarios.</p>
+                    <a href="https://subtrack.com/@midega-g/building-scalable-data-pipelines" target="_blank" class="blog-link">Read on Subtrack →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="./assets/dataops.png" alt="DataOps Best Practices">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-date">February 28, 2024</span>
+                        <span class="blog-read-time">12 min read</span>
+                    </div>
+                    <h3>DataOps: Streamlining Data Engineering Workflows for Faster Insights</h3>
+                    <p>Explore DataOps methodologies for accelerating data engineering processes, from automated testing to continuous integration and deployment of data pipelines.</p>
+                    <div class="blog-tags">
+                        <span>DataOps</span>
+                        <span>Data Engineering</span>
+                        <span>DevOps</span>
+                    </div>
+                </div>
+                <div class="blog-details">
+                    <p>Discover the essential components of a robust DataOps pipeline, from automated testing to continuous integration and deployment of data workflows. Learn how to monitor pipeline performance and implement best practices for faster data insights.</p>
+                    <a href="https://subtrack.com/@midega-g/mlops-best-practices" target="_blank" class="blog-link">Read on Subtrack →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="swiper testimonials-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                        <p class="testimonial-quote">"Zablon transformed our data infrastructure completely. His expertise in building scalable pipelines saved us countless hours and improved our decision-making process significantly."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                        <p class="testimonial-quote">"Working with Zablon was a game-changer for our analytics capabilities. His ML models increased our customer retention by 25% and provided actionable insights we never had before."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out via the form or connect with me on social media.</p>
+                <div class="social-links">
+                    <a href="mailto:zabowin@gmail.com" title="Email" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/email.png" alt="Email" class="social-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/zablon-owino-b034b61a7" target="_blank" title="LinkedIn" rel="noopener noreferrer">
+                        <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://github.com/o-zab" target="_blank" title="GitHub" rel="noopener noreferrer">
+                        <img src="./assets/github.png" alt="GitHub" class="social-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name" />
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email" />
+                    
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Subject" />
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                    <p id="form-message" class="form-message"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quicklinks</h3>
+                <ul class="footer-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-paragraph">© 2025 Zablon Owino. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Category navigation functions
+        // Removed duplicate functions to avoid conflicts with script.js
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

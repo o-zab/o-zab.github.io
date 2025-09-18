@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT & Real-time Systems Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects/projects.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+
+</head>
+
+<body>
+    <!-- Desktop Navbar -->
+    <nav id="desktop-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#projects">Projects&nbsp;&amp;&nbsp;Blogs</a></li>
+            <li><a href="index.html#experience">Tools&nbsp;&amp;&nbsp;Skills</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hamburger Navbar -->
+    <nav id="hamburger-nav">
+        <div class="hamburger-wrapper">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="index.html#projects" onclick="toggleMenu()">Projects&nbsp;&amp;&nbsp;Blogs</a></li>
+                    <li><a href="index.html#experience" onclick="toggleMenu()">Tools&nbsp;&amp;&nbsp;Skills</a></li>
+                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navback Projects Page -->
+    <div class="navback-projects-page">
+        <a href="index.html" class="back-button">Home</a>&nbsp;
+        <a href="#" class="nav-back-button">>></a>&nbsp;
+        <a href="#top" class="back-button">IoT & Real-time Systems</a>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button-container">
+        <a href="index.html#projects" class="back-btn">← Back to Categories</a>
+    </div>
+
+    <section class="section-projects-page">
+        <p class="section__text_p1">IoT & Real-time Systems</p>
+        <p class="intro-projects-page">
+            <br>
+            Dive into the world of connected devices and real-time data processing. These projects showcase IoT architectures,
+            sensor integration, data streaming technologies, and real-time analytics. From smoke detection systems to
+            scalable IoT pipelines, you'll see how data flows from sensors to insights in real-time. Projects feature
+            technologies like MQTT, Docker, Telegraf, InfluxDB, and Grafana for building robust IoT solutions.
+        </p>
+        <div class="wrapper-projects-page">
+            <div class="item-projects-page" style="background-image: url(assets/Iot&RealtimeSystems.webp);">
+                <div class="desc-projects-page">
+                    <h3>Realtime Movie Scene Recognition</h3>
+                    <p>A real-time system for recognizing scenes in movies using computer vision and machine learning techniques.</p>
+                    <div class="buttons-projects-page">
+                        <a href="https://github.com/o-zab/Realtime_moviescene_recognition" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <nav id="footer-nav">
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#projects">Projects&nbsp;&amp;&nbsp;Blogs</a></li>
+                    <li><a href="index.html#experience">Tools&nbsp;&amp;&nbsp;Skills</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="footer-paragraph">
+            <p>Copyright &copy; <span id="current-year"></span></p>
+            <p>Designed by Zablon Owino</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

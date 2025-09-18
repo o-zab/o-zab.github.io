@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="norton-safeweb-site-verification" content="24usqpep0ejc5w6hod3dulxwciwp0djs6c6ufp96av3t4whuxovj72wfkdjxu82yacb7430qjm8adbd5ezlt4592dq4zrvadcn9j9n-0btgdzpiojfzno16-fnsnu7xd" />
+        
+        <link rel="preconnect" href="https://substackcdn.com" />
+        
+
+        
+
+        
+
+        <style>
+          @layer legacy, tailwind, pencraftReset, pencraft;
+        </style>
+
+        
+        <link rel="preload" as="style" href="https://substackcdn.com/bundle/theme/substack.e35bdd83f6932ca9e879.css" />
+        
+        
+        
+
+        
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/2902.4c6c477f.css" />
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/994.8c2ad690.css" />
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/6521.565bd780.css" />
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/substack.441ac9b9.css" />
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/3942.78b3d8a1.css" />
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/7294.aabc06b7.css" />
+            
+                <link rel="stylesheet" type="text/css" href="https://substackcdn.com/bundle/static/css/9899.b80bdace.css" />
+            
+        
+
+        
+        
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover" />
+        <meta name="author" content="Substack" />
+        <meta property="og:url" content="https://substack.com/img/substack-logo.png" />
+        <title data-preact-helmet>Discover Substack Newsletters</title>
+        <meta data-preact-helmet property="og:image" content="https://substack.com/img/home_page/og-homepage.png"><meta data-preact-helmet name="twitter:image" content="https://substack.com/img/home_page/og-homepage.png"><meta data-preact-helmet name="twitter:card" content="summary"><meta data-preact-helmet property="og:type" content="article"><meta data-preact-helmet property="og:title" content="Discover Substack Newsletters"><meta data-preact-helmet name="twitter:title" content="Discover Substack Newsletters"><meta data-preact-helmet name="description" content="Find great things to read on Substack. Browse top publications, find writers you follow, or search by topic."><meta data-preact-helmet property="og:description" content="Find great things to read on Substack. Browse top publications, find writers you follow, or search by topic."><meta data-preact-helmet name="twitter:description" content="Find great things to read on Substack. Browse top publications, find writers you follow, or search by topic."><meta data-preact-helmet name="robots" content="noindex">
+        <link rel="canonical" href="https://substack.com/img/substack-logo.png" />
+        
+
+        
+
+        
+
+        
+            
+                <link rel="shortcut icon" href="https://substackcdn.com/icons/substack/favicon.ico" sizes="32x32">
+            
+        
+            
+                <link rel="icon" href="https://substackcdn.com/icons/substack/icon.svg" type="image/svg+xml">
+            
+        
+            
+                <link rel="apple-touch-icon" href="https://substackcdn.com/icons/substack/apple-touch-icon.png">
+            
+        
+            
+        
+            
+        
+            
+        
+
+        
+
+        
+
+        
+            <style>
+    /* Cahuenga */
+    @font-face {
+        font-family: 'Cahuenga';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Cahuenga Light'), local('Cahuenga-Light'), url(https://substackcdn.com/fonts/Cahuenga-Light.woff2) format('woff2');
+        font-display: fallback;
+    }
+    @font-face {
+        font-family: 'Cahuenga';
+        font-style: italic;
+        font-weight: 300;
+        src: local('Cahuenga Light Italic'), local('Cahuenga-Light-Italic'), url(https://substackcdn.com/fonts/Cahuenga-LightItalic.woff2) format('woff2');
+        font-display: fallback;
+    }
+    @font-face {
+        font-family: 'Cahuenga';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Cahuenga Regular'), local('Cahuenga-Regular'), url(https://substackcdn.com/fonts/Cahuenga-Regular.woff2) format('woff2');
+        font-display: fallback;
+    }
+    @font-face {
+        font-family: 'Cahuenga';
+        font-style: italic;
+        font-weight: 400;
+        src: local('Cahuenga Italic'), local('Cahuenga-Italic'), url(https://substackcdn.com/fonts/Cahuenga-Italic.woff2) format('woff2');
+        font-display: fallback;
+    }
+    @font-face {
+        font-family: 'Cahuenga';
+        font-style: normal;
+        font-weight: 500;
+        src: local('Cahuenga SemiBold'), local('Cahuenga-SemiBold'), url(https://substackcdn.com/fonts/Cahuenga-SemiBold.woff2) format('woff2');
+        font-display: fallback;
+    }
+    @font-face {
+        font-family: 'Cahuenga';
+        font-style: italic;
+        font-weight: 500;
+        src: local('Cahuenga SemiBold Italic'), local('Cahuenga-SemiBold-Italic'), url(https://substackcdn.com/fonts/Cahuenga-SemiBoldItalic.woff2) format('woff2');
+        font-display: fallback;
+    }
+    @font-face {
+        font-family: 'Cahuenga';
+        font-style: normal;
+        font-weight: 600;
+        src: local('Cahuenga Bold'), local('Cahuenga-Bold'), url(https://substackcdn.com/fonts/Cahuenga-Bold.woff2) format('woff2');
+        font-display: fallback;
+    }
+    @font-face {
+        font-family: 'Cahuenga';
+        font-style: italic;
+        font-weight: 600;
+        src: local('Cahuenga Bold Italic'), local('Cahuenga-Bold-Italic'), url(https://substackcdn.com/fonts/Cahuenga-BoldItalic.woff2) format('woff2');
+        font-display: fallback;
+    }
+    @font-face {
+        font-family: 'Cahuenga';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Cahuenga ExtraBold'), local('Cahuenga-ExtraBold'), url(https://substackcdn.com/fonts/Cahuenga-ExtraBold.woff2) format('woff2');
+        font-display: fallback;
+    }
+    @font-face {
+        font-family: 'Cahuenga';
+        font-style: italic;
+        font-weight: 700;
+        src: local('Cahuenga ExtraBold Italic'), local('Cahuenga-ExtraBold-Italic'), url(https://substackcdn.com/fonts/Cahuenga-ExtraBoldItalic.woff2) format('woff2');
+        font-display: fallback;
+    }
+</style>
+
+        
+        
+          <style>
+            @font-face{font-family:'Spectral';font-style:italic;font-weight:400;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8on7mTNmnUHowCw.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Spectral';font-style:italic;font-weight:400;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8onXmTNmnUHowCw.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Spectral';font-style:italic;font-weight:400;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8onTmTNmnUHowCw.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Spectral';font-style:italic;font-weight:400;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8onrmTNmnUHo.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Spectral';font-style:normal;font-weight:400;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M9knjsS_ulYHs.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Spectral';font-style:normal;font-weight:400;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M2knjsS_ulYHs.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Spectral';font-style:normal;font-weight:400;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M3knjsS_ulYHs.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Spectral';font-style:normal;font-weight:400;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M5knjsS_ul.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Spectral';font-style:normal;font-weight:600;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3FafaPWnIIMrY.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Spectral';font-style:normal;font-weight:600;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3OafaPWnIIMrY.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Spectral';font-style:normal;font-weight:600;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3PafaPWnIIMrY.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Spectral';font-style:normal;font-weight:600;font-display:fallback;src:url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3BafaPWnII.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            
+          </style>
+        
+        
+
+        <style>:root{--background_pop:#ff6719;--cover_bg_color:#FFFFFF;--background_pop_darken:#ff5600;--print_on_pop:#ffffff;--border_subtle:#f6e7df;--background_subtle:rgba(255, 232, 221, 0.4);--print_pop:#ff6719;--cover_print_primary:#363737;--cover_print_secondary:#757575;--cover_print_tertiary:#b6b6b6;--cover_border_color:#ff6719;--background_contrast_1:#f0f0f0;--background_contrast_2:#dddddd;--background_contrast_3:#b7b7b7;--background_contrast_4:#929292;--background_contrast_5:#515151;--color_theme_detail:#e6e6e6;--background_contrast_pop:rgba(255, 103, 25, 0.4);--input_background:#ffffff;--cover_input_background:#ffffff;--tooltip_background:#191919;--background_pop_rgb:255, 103, 25;--background_pop_rgb_pc:255 103 25;}</style>
+
+        
+            <link rel="stylesheet" href="https://substackcdn.com/bundle/theme/substack.e35bdd83f6932ca9e879.css" />
+        
+
+        <style></style>
+
+        
+
+        
+
+        
+
+        
+    </head>
+
+    <body class=" ">
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        <div id="entry">
+            <div id="substack-home" class="new-landing-page"><div class="homepage-nav"><div class="homepage-nav-bar"><div class="homepage-nav-wrap"><div class="left"><button tabindex="0" type="button" class="pencraft pc-reset pencraft homepage-nav-mobile-menu-toggle outline-grayscale buttonBase-GK1x3M"><svg role="img" width="100" height="100" viewBox="0 0 100 100" fill="none" stroke-width="1.8" stroke="#000" xmlns="http://www.w3.org/2000/svg" class="burger-icon"><g><title></title><path d="M84.7,53.7H15.1c-2.1,0-3.8-1.7-3.8-3.8v0c0-2.1,1.7-3.8,3.8-3.8h69.7c2.1,0,3.8,1.7,3.8,3.8v0C88.6,52,86.9,53.7,84.7,53.7  z"></path><path d="M84.7,23.7H15.1c-2.1,0-3.8-1.7-3.8-3.8v0c0-2.1,1.7-3.8,3.8-3.8h69.7c2.1,0,3.8,1.7,3.8,3.8v0C88.6,22,86.9,23.7,84.7,23.7  z"></path><path d="M84.7,83.7H15.1c-2.1,0-3.8-1.7-3.8-3.8v0c0-2.1,1.7-3.8,3.8-3.8h69.7c2.1,0,3.8,1.7,3.8,3.8v0C88.6,82,86.9,83.7,84.7,83.7  z"></path></g></svg></button><a href="/" native class="homepage-nav-logo"><svg role="img" width="21" height="24" viewBox="0 0 21 24" fill="#ff6719" stroke-width="1.8" stroke="none" xmlns="http://www.w3.org/2000/svg" class="nav-logo-icon"><g><title></title><path d="M20.9991 5.40625H0V8.24275H20.9991V5.40625Z"></path><path d="M0 10.8125V24.0004L10.4991 18.1107L21 24.0004V10.8125H0Z"></path><path d="M20.9991 0H0V2.83603H20.9991V0Z"></path></g></svg></a><button tabindex="0" type="button" class="pencraft pc-reset pencraft homepage-nav-for-writers small no-margin buttonBase-GK1x3M"><span>Resources</span><svg role="img" width="12" height="10" viewBox="0 0 18 10" fill="none" stroke-width="1.8" stroke="#555" xmlns="http://www.w3.org/2000/svg"><g><title></title><path d="M1 1L9 9L17 1" stroke="#999" stroke-width="1"></path></g></svg><ul class="dropdown-menu homepage-nav-menu tooltip no-place"><div class="dropdown-menu-wrapper"><li><a href="/get-started?utm_source=menu-dropdown" native><span class="underline">How to start a Substack</span></a></li><li><a href="/going-paid-guide?utm_source=menu-dropdown" native><span class="underline">Going paid guide</span></a></li><li><a href="/resources?utm_source=menu-dropdown" native><span class="underline">Resource center</span></a></li><li><a href="/community-and-programs?utm_source=menu-dropdown" native><span class="underline">Community &amp; programs</span></a></li><li><a href="https://support.substack.com/hc/en-us/?utm_source=menu-dropdown" target="_blank" rel="noopener" native><span class="underline">Help center</span></a></li><li><a href="https://substack.com/brand?utm_source=menu-dropdown" target="_blank" rel="noopener" native><span class="underline">Brand assets</span></a></li></div></ul></button><button tabindex="0" type="button" class="pencraft pc-reset pencraft homepage-nav-for-writers small no-margin buttonBase-GK1x3M"><span>Creators</span><svg role="img" width="12" height="10" viewBox="0 0 18 10" fill="none" stroke-width="1.8" stroke="#555" xmlns="http://www.w3.org/2000/svg"><g><title></title><path d="M1 1L9 9L17 1" stroke="#999" stroke-width="1"></path></g></svg><ul class="dropdown-menu homepage-nav-menu tooltip no-place"><div class="dropdown-menu-wrapper"><li><a href="/switch?utm_source=menu-dropdown" native><span class="underline">Switch to Substack</span></a></li><li><a href="/going-paid?utm_source=menu-dropdown" native analyticsEvent="Homepage Going Paid Link Clicked"><span class="underline">Go paid</span></a></li><li><a href="/growthfeatures?utm_source=menu-dropdown" native analyticsEvent="Homepage Grow Link Clicked"><span class="underline">Grow your audience</span></a></li><li><a href="https://pages.substack.com/livevideoshows?utm_source=menu-dropdown" analyticsEvent="Homepage Live Video Link Clicked"><span class="underline">For live video</span></a></li><li><a href="/video?utm_source=menu-dropdown" analyticsEvent="Homepage Video Link Clicked"><span class="underline">For video</span></a></li><li><a href="/podcasts?utm_source=menu-dropdown" analyticsEvent="Homepage Podcast Link Clicked"><span class="underline">For podcasts</span></a></li><li><a href="/for-bloggers?utm_source=menu-dropdown" native><span class="underline">For bloggers</span></a></li><li><a href="/investing-and-business?utm_source=menu-dropdown" native><span class="underline">For finance writers</span></a></li><li><a href="/book?utm_source=menu-dropdown" native><span class="underline">For authors</span></a></li><li><a href="/food-writers?utm_source=menu-dropdown" native><span class="underline">For food writers</span></a></li><li><a href="/local-news?utm_source=menu-dropdown" native><span class="underline">For local news</span></a></li></div></ul></button><button tabindex="0" type="button" class="pencraft pc-reset pencraft homepage-nav-for-writers small no-margin buttonBase-GK1x3M"><span>Explore</span><svg role="img" width="12" height="10" viewBox="0 0 18 10" fill="none" stroke-width="1.8" stroke="#555" xmlns="http://www.w3.org/2000/svg"><g><title></title><path d="M1 1L9 9L17 1" stroke="#999" stroke-width="1"></path></g></svg><ul class="dropdown-menu homepage-nav-menu tooltip no-place"><div class="dropdown-menu-wrapper"><li><a href="https://substack.com/app?utm_source=menu-dropdown" target="_blank" rel="noopener"><span class="underline">Substack App</span></a></li><li><a href="/discover?utm_source=menu-dropdown" target="_blank" rel="noopener" native><span class="underline">Discover</span></a></li><li><a href="https://on.substack.com/s/stories" target="_blank" rel="noopener"><span class="underline">Featured</span></a></li><li><a href="https://www.substack.com/globe" native><span class="underline">Substacks around the world</span></a></li></div></ul></button></div><div class="right"><form class="homepage-nav-search-bar"><input type="text" name="query" placeholder="Search Substack..." autocomplete="off"/><svg role="img" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="#000" xmlns="http://www.w3.org/2000/svg"><g><title></title><path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21.0004 21.0004L16.6504 16.6504" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></form><button tabindex="0" type="button" analyticsEvent="Homepage Get Started Clicked" data-href="https://substack.com/signup?utm_source=substack" class="pencraft pc-reset pencraft buttonBase-GK1x3M buttonText-X0uSmG buttonStyle-r7yGCK priority_primary-RfbeYt size_md-gCDS3o">Start publishing</button><div class="pencraft pc-display-flex pc-reset bg-white-ZBV5av pc-borderRadius-sm"><button tabindex="0" type="button" data-href="https://substack.com/sign-in?redirect=%2Fimg%2Fsubstack-logo.png" class="pencraft pc-reset pencraft buttonBase-GK1x3M buttonText-X0uSmG buttonStyle-r7yGCK priority_tertiary-rlke8z size_md-gCDS3o">Sign in</button></div></div></div></div><div class="homepage-nav-mobile-menu"><svg role="img" style="height:16px;width:16px;" width="16" height="16" viewBox="0 0 20 20" fill="none" stroke-width="1.8" stroke="#666666" xmlns="http://www.w3.org/2000/svg" class="mobile-menu-close-button"><g><title></title><path d="M15 5L5 15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 5L15 15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg><form class="homepage-nav-search-bar"><input type="text" name="query" placeholder="Search Substack..." autocomplete="off"/><svg role="img" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="#000" xmlns="http://www.w3.org/2000/svg"><g><title></title><path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21.0004 21.0004L16.6504 16.6504" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg></form><div class="mobile-menu-section"><div class="mobile-menu-header">Explore</div><a href="https://substack.com/app?utm_source=menu-dropdown" target="_blank" rel="noopener">Substack App</a><a href="/discover?utm_source=menu-dropdown" target="_blank" rel="noopener" native>Discover</a><a href="https://on.substack.com/s/stories" target="_blank" rel="noopener">Featured</a><a href="https://www.substack.com/globe" native>Substacks around the world</a></div><div class="mobile-menu-section"><div class="mobile-menu-header">Creators</div><a href="/switch?utm_source=menu-dropdown" native>Switch to Substack</a><a href="/going-paid?utm_source=menu-dropdown" native analyticsEvent="Homepage Going Paid Link Clicked">Go paid</a><a href="/growthfeatures?utm_source=menu-dropdown" native analyticsEvent="Homepage Grow Link Clicked">Grow your audience</a><a href="https://pages.substack.com/livevideoshows?utm_source=menu-dropdown" analyticsEvent="Homepage Live Video Link Clicked">For live video</a><a href="/video?utm_source=menu-dropdown" analyticsEvent="Homepage Video Link Clicked">For video</a><a href="/podcasts?utm_source=menu-dropdown" analyticsEvent="Homepage Podcast Link Clicked">For podcasts</a><a href="/for-bloggers?utm_source=menu-dropdown" native>For bloggers</a><a href="/investing-and-business?utm_source=menu-dropdown" native>For finance writers</a><a href="/book?utm_source=menu-dropdown" native>For authors</a><a href="/food-writers?utm_source=menu-dropdown" native>For food writers</a><a href="/local-news?utm_source=menu-dropdown" native>For local news</a></div><div class="mobile-menu-section"><div class="mobile-menu-header">Resources</div><a href="/get-started?utm_source=menu-dropdown" native>How to start a Substack</a><a href="/going-paid-guide?utm_source=menu-dropdown" native>Going paid guide</a><a href="/resources?utm_source=menu-dropdown" native>Resource center</a><a href="/community-and-programs?utm_source=menu-dropdown" native>Community &amp; programs</a><a href="https://support.substack.com/hc/en-us/?utm_source=menu-dropdown" target="_blank" rel="noopener" native>Help center</a><a href="https://substack.com/brand?utm_source=menu-dropdown" target="_blank" rel="noopener" native>Brand assets</a></div></div></div><div class="not-found-page"><div class="discover-page new-landing-page"><div class="container"><div class="explore-header"><h1 class="display-type">Discover world class culture</h1><p class="discover-page-subtitle">Browse top publications, find writers and creators to follow, or search by topic.</p></div><div class="new-landing-page reader-landing-page page category-featured"><div class="container"><div class="landing-content"><div class="landing-section landing-publications"><div class="publications-header not-mobile"></div><div class="publications"></div></div><div class="landing-section landing-categories"><div class="only-mobile"><div class="mobile-toggle"></div></div><div class="categories"></div></div></div></div></div></div></div></div><div class="footer-wrap www-footer"><div class="home-footer"><div class="footer-contain"><div class="footer-info"><div class="footer-info-col"><h3>Discover</h3><a href="/discover?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Featured</a><a href="/app?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Get the app</a><a href="https://reader.substack.com?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Substack Reader</a><a href="/discover/category/podcast/paid?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Top podcasts</a><a href="/discover/category/culture/paid?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Top in culture</a><a href="/discover/category/food/paid?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Top in food &amp; drink</a><a href="/discover/category/finance/paid?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Top in finance</a><a href="/discover/category/sports/paid?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Top in sports</a><a href="/discover/category/politics/paid?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Top in politics</a><a href="/discover/category/technology/paid?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Top in technology</a><a href="/discover/category/faith/paid?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Top in faith</a><a href="/discover/category/business/paid?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Top in business</a><a href="/topics?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Topics</a></div><div class="footer-info-col"><h3>Creators</h3><a href="/switch?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Switch to Substack</a><a href="/get-started?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Get started</a><a href="/going-paid?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Go paid</a><a href="/video?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>For video</a><a href="/podcasts?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>For podcasts</a><a href="/for-bloggers?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>For bloggers</a><a href="/investing-and-business?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>For finance writers</a><a href="/book?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>For authors</a><a href="/food-writers?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>For food writers</a><a href="/local-news?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>For local news</a></div><div class="footer-info-col"><h3>Company</h3><a href="/about?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>About</a><a href="https://support.substack.com/hc/en-us?s=support%40substack.com">Help</a><a href="/jobs?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Jobs</a><a href="https://on.substack.com?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Blog</a><a href="/vulnerability-disclosure?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Vulnerability Policy</a><a href="/contact?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Contact</a><a href="/sitemap" native>Sitemap</a></div><div class="footer-info-col"><h3>Resources</h3><a href="/resources?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Resource center</a><a href="/going-paid-guide?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Guide to going paid</a><a href="https://support.substack.com/hc/en-us?s=support%40substack.com" native>Help center</a><a href="/community-and-programs?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Community and programs</a><a href="/brand?utm_source=substack&amp;utm_medium=web&amp;utm_content=footer" native>Brand assets</a></div></div><div class="logo-copy-wrapper"><svg role="img" width="21" height="24" viewBox="0 0 21 24" fill="#ff6719" stroke-width="1.8" stroke="none" xmlns="http://www.w3.org/2000/svg" class="navbar-logo-wordmark substack-logo-wordmark"><g><title></title><path d="M20.9991 5.40625H0V8.24275H20.9991V5.40625Z"></path><path d="M0 10.8125V24.0004L10.4991 18.1107L21 24.0004V10.8125H0Z"></path><path d="M20.9991 0H0V2.83603H20.9991V0Z"></path></g></svg><div class="slogan tw-mt-5">Substack is the home for great culture</div></div></div></div><div class="footer-divider"></div><div class="footer-bottom-bar"><div class="app-badges"><a href="https://substack.com/app/get-ios?utm_campaign=app-marketing&amp;utm_content=www-footer" class="app-badge"><img src="https://substackcdn.com/image/fetch/$s_!9Vqr!,w_238,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fapp_page%2Fapp-store-white.png%3Fv%3D1" height="40" width="134" loading="lazy"/></a><a href="https://substack.com/app/get-android?utm_campaign=app-marketing&amp;utm_content=www-footer" class="app-badge"><img src="https://substackcdn.com/image/fetch/$s_!tIqx!,w_238,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fapp_page%2Fgoogle-play-white.png" height="40" width="134" loading="lazy"/></a></div><div class="footer-bottom-links"><span class="copyright bottom-item">© Substack Inc.</span><a href="https://substack.com/privacy" native class="bottom-item">Privacy</a><a href="https://substack.com/tos" native class="bottom-item">Terms</a><a href="https://substack.com/accessibility" native class="bottom-item">Accessibility</a><a href="https://substack.com/ccpa#personal-data-collected" native class="bottom-item">Collection notice</a></div></div></div></div><div style="left:auto;right:16px;bottom:16px;z-index:1001;transform:translateY(0px);" role="region" aria-label="Notification" class="pencraft pc-position-fixed pc-reset sizing-border-box-DggLA4"></div><div></div>
+        </div>
+
+        
+            <script src="https://js.sentry-cdn.com/6c2ff3e3828e4017b7faf7b63e24cdf8.min.js" crossorigin="anonymous"></script>
+            <script>
+                window.Sentry && window.Sentry.onLoad(function() {
+                    window.Sentry.init({
+                        environment: window._preloads.sentry_environment,
+                        dsn: window._preloads.sentry_dsn,
+                    })
+                })
+            </script>
+        
+
+
+        
+        
+        
+        <script>window._preloads        = JSON.parse("{\"isEU\":false,\"language\":\"en\",\"country\":\"KE\",\"userLocale\":{\"language\":\"en\",\"region\":\"US\",\"source\":\"default\"},\"base_url\":\"https://substack.com\",\"stripe_publishable_key\":\"pk_live_51QfnARLDSWi1i85FBpvw6YxfQHljOpWXw8IKi5qFWEzvW8HvoD8cqTulR9UWguYbYweLvA16P7LN6WZsGdZKrNkE00uGbFaOE3\",\"captcha_site_key\":\"6LdYbsYZAAAAAIFIRh8X_16GoFRLIReh-e-q6qSa\",\"pub\":null,\"confirmedLogin\":false,\"hide_intro_popup\":true,\"block_auto_login\":false,\"domainInfo\":{\"isSubstack\":true,\"customDomain\":null},\"experimentFeatures\":{},\"experimentExposures\":{},\"siteConfigs\":{\"score_upsell_email\":\"control\",\"first_chat_email_enabled\":true,\"notes_video_max_duration_minutes\":5,\"reader-onboarding-promoted-pub\":737237,\"new_commenter_approval\":false,\"pub_update_opennode_api_key\":false,\"enable_user_report_review\":true,\"zendesk_automation_cancellations\":false,\"hide_book_a_meeting_button\":false,\"suggested_search_metadata_web_ui\":false,\"mfa_action_box_enabled\":false,\"publication_max_bylines\":35,\"no_contest_charge_disputes\":false,\"feed_posts_previously_seen_weight\":0.1,\"publication_tabs_reorder\":false,\"comp_expiry_email_new_copy\":\"NONE\",\"free_unlock_required\":false,\"traffic_rule_check_enabled\":false,\"amp_emails_enabled\":false,\"enable_post_summarization\":false,\"live_stream_host_warning_message\":\"\",\"bitcoin_enabled\":false,\"minimum_ios_os_version\":\"17.0.0\",\"show_entire_square_image\":false,\"hide_subscriber_count\":false,\"publication_author_display_override\":\"\",\"ios_webview_payments_enabled\":\"control\",\"generate_pdf_tax_report\":false,\"dpn_weight_disable\":5,\"show_generic_post_importer\":false,\"enable_pledges_modal\":true,\"include_pdf_invoice\":false,\"app_upsell_after_posting_notes\":\"experiment\",\"notes_weight_watch_video\":5,\"use_post_podcast_import_batching\":true,\"meetings_v1\":false,\"exempt_from_gtm_filter\":false,\"group_sections_and_podcasts_in_menu\":false,\"boost_optin_modal_enabled\":true,\"standards_and_enforcement_features_enabled\":false,\"pub_creation_captcha_behavior\":\"risky_pubs_or_rate_limit\",\"post_blogspot_importer\":false,\"notes_weight_short_item_boost\":0.15,\"pub_tts_override\":\"default\",\"disable_monthly_subscriptions\":false,\"skip_welcome_email\":false,\"chat_reader_thread_notification_default\":false,\"scheduled_pinned_posts\":false,\"disable_redirect_outbound_utm_params\":false,\"reader_gift_referrals_enabled\":true,\"enable_bestseller_survey_modal\":false,\"dont_show_guest_byline\":false,\"like_comments_enabled\":true,\"subscription_bar_all_debug_enabled\":false,\"temporal_livestream_ended_draft\":true,\"enable_author_note_email_toggle\":false,\"meetings_embed_publication_name\":false,\"fallback_to_archive_search_on_section_pages\":false,\"livekit_track_egress_custom_base_url\":\"http://livekit-egress-custom-recorder-participant-test.s3-website-us-east-1.amazonaws.com\",\"people_you_may_know_algorithm\":\"experiment\",\"welcome_screen_blurb_override\":\"\",\"live_stream_guest_overlay\":\"control\",\"like_posts_enabled\":true,\"twitter_player_card_enabled\":true,\"feed_promoted_user\":false,\"writer_beta_android_enable_post_editor_v2\":false,\"show_note_stats_for_all_notes\":false,\"section_specific_csv_imports_enabled\":false,\"disable_podcast_feed_description_cta\":false,\"bypass_profile_substack_logo_detection\":false,\"use_preloaded_player_sources\":false,\"list_pruning_enabled\":false,\"facebook_connect\":false,\"opt_in_to_sections_during_subscribe\":false,\"dpn_weight_share\":2,\"underlined_colored_links\":false,\"rate_limit_live_reaction_messages_v3\":\"16ps\",\"modal_rec_variant_user\":\"control\",\"extract_stripe_receipt_url\":false,\"enable_aligned_images\":false,\"max_image_upload_mb\":64,\"enable_android_dms_writer_beta\":false,\"threads_suggested_ios_version\":null,\"pledges_disabled\":false,\"threads_minimum_ios_version\":812,\"hide_podcast_email_setup_link\":false,\"subscribe_captcha_behavior\":\"default\",\"publication_ban_sample_rate\":0,\"grant_viral_gifts_to_gift_recipients\":\"experiment\",\"ios_enable_publication_activity_tab\":false,\"custom_themes_substack_subscribe_modal\":false,\"share_viral_gift_as_link\":\"experiment\",\"opt_in_to_sections_during_subscribe_include_main_pub_newsletter\":false,\"continue_support_cta_in_newsletter_emails\":false,\"bloomberg_syndication_enabled\":false,\"lists_enabled\":false,\"ios_feed_media_content_mode\":\"fit\",\"generated_database_maintenance_mode\":false,\"allow_document_freeze\":false,\"subscription_bar_all_debug_subdomains\":null,\"podcast_main_feed_is_firehose\":false,\"pub_app_incentive_gift\":\"\",\"no_embed_redirect\":false,\"translate_mobile_app\":false,\"customized_email_from_name_for_new_follow_emails\":\"treatment\",\"spotify_open_access_sandbox_mode\":false,\"partner_data_api_enabled\":false,\"fullstory_enabled\":false,\"chat_reply_poll_interval\":3,\"dpn_weight_follow_or_subscribe\":3,\"enable_reader_marketing_page\":false,\"force_pub_links_to_use_subdomain\":false,\"always_show_cookie_banner\":false,\"hide_media_download_option\":false,\"hide_post_restacks\":false,\"feed_item_source_debug_mode\":false,\"writer_beta_android_enable_post_editor\":false,\"thefp_enable_account_menu\":false,\"enable_user_status_ui\":false,\"publication_homepage_title_display_override\":\"\",\"pub_banned_word_list\":\"\",\"post_preview_highlight_byline\":false,\"4k_video\":false,\"enable_islands_section_intent_screen\":false,\"tfp_free_week_reg_wall\":false,\"post_metering_enabled\":false,\"notifications_disabled\":\"\",\"cross_post_notification_threshold\":1000,\"facebook_connect_prod_app\":true,\"feed_enable_live_streams\":false,\"force_into_pymk_ranking\":false,\"minimum_android_version\":756,\"enable_transcription_translations\":false,\"ios_post_video_pager_alpha_enabled\":false,\"use_og_image_as_twitter_image_for_post_previews\":false,\"always_use_podcast_channel_art_as_episode_art_in_rss\":false,\"cookie_preference_middleware_enabled\":false,\"seo_tier_override\":\"NONE\",\"no_follow_links\":false,\"publisher_api_enabled\":false,\"zendesk_support_priority\":\"default\",\"enable_post_clips_stats\":false,\"enable_subscriber_referrals_awards\":true,\"ios_profile_themes_feed_permalink_enabled\":false,\"use_publication_language_for_transcription\":false,\"show_substack_funded_gifts_tooltip\":true,\"disable_ai_transcription\":false,\"thread_permalink_preview_min_ios_version\":4192,\"feed_main_disabled\":false,\"android_toggle_on_website_enabled\":false,\"internal_android_enable_post_editor\":false,\"edit_profile_feed_item\":false,\"updated_inbox_ui\":false,\"web_reader_podcasts_tab\":false,\"use_temporal_thumbnail_selection_workflow\":false,\"live_stream_creation_enabled\":false,\"disable_card_element_in_europe\":false,\"enable_web_typing_indicators\":false,\"web_vitals_sample_rate\":0,\"allow_live_stream_auto_takedown\":\"true\",\"search_ranker_variant\":\"control\",\"post_advanced_search\":\"control\",\"ai_image_generation_enabled\":true,\"disable_personal_substack_initialization\":false,\"section_specific_welcome_pages\":false,\"local_payment_methods\":\"control\",\"posts_in_rss_feed\":20,\"post_rec_endpoint\":\"\",\"publisher_dashboard_section_selector\":false,\"reader_surveys_platform_question_order\":\"36,1,4,2,3,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35\",\"ios_toggle_on_website_enabled\":false,\"login_guard_app_link_in_email\":true,\"modal_rec_variant_content\":\"control\",\"monthly_sub_is_one_off\":false,\"unread_notes_activity_digest\":\"control\",\"display_cookie_settings\":false,\"welcome_page_query_params\":false,\"enable_free_podcast_urls\":false,\"comp_expiry_emails_disabled\":false,\"enable_description_on_polls\":false,\"use_microlink_for_instagram_embeds\":false,\"post_notification_batch_delay_ms\":30000,\"free_signup_confirmation_behavior\":\"with_email_validation\",\"social_context_in_pymk_feed_module_v2\":\"treatment-nofacepile\",\"ios_post_stats_for_admins\":false,\"live_stream_concurrent_viewer_count_drawer\":false,\"use_livestream_post_media_composition\":true,\"section_specific_preambles\":false,\"android_live_stream_multihost_enabled\":false,\"show_menu_on_posts\":false,\"app_upsell_follow_prompt\":\"control\",\"ios_post_subscribe_web_routing\":true,\"opt_into_all_trending_topics\":false,\"ios_writer_stats_public_launch_v2\":false,\"min_size_for_phishing_check\":1,\"enable_android_post_stats\":false,\"ios_chat_revamp_enabled\":false,\"app_onboarding_survey_email\":false,\"post_notification_batch_chunk_size\":100,\"thefp_enable_pullquote_alignment\":false,\"thefp_enable_pullquote_color\":false,\"republishing_enabled\":false,\"app_mode\":false,\"show_phone_banner\":false,\"live_stream_video_enhancer\":\"internal\",\"enable_author_pages\":false,\"enable_decagon_chat\":true,\"first_month_upsell\":\"control\",\"enable_fedcm\":false,\"new_user_checklist_enabled\":\"use_follower_count\",\"ios_trending_topic_note_badge\":\"experiment\",\"enable_updated_webview_checkout\":false,\"show_attached_profile_for_pub_setting\":false,\"welcome_page_update_desktop_visuals_limited\":\"experiment\",\"rss_verification_code\":\"\",\"notification_post_emails\":\"experiment\",\"ios_profile_subdomain_chips\":true,\"chat_suppress_contributor_push_option_enabled\":false,\"live_stream_invite_ttl_seconds\":600,\"feed_ranking_per_post_clip_cap\":2,\"export_hooks_enabled\":false,\"audio_encoding_bitrate\":null,\"bestseller_pub_override\":false,\"extra_seats_coupon_type\":false,\"post_subdomain_universal_links\":false,\"post_import_max_file_size\":26214400,\"notes_weight_follow\":4,\"livekit_reconnect_slate_url\":\"https://mux-livestream-assets.s3.us-east-1.amazonaws.com/custom-disconnect-slate-tall.png\",\"exclude_from_pymk_suggestions\":false,\"minimum_ios_version\":2200,\"disable_annual_subscriptions\":false,\"enable_bestseller_survey_modal_override\":false,\"enable_android_dms\":false,\"non_mfa_password_login_guard\":\"block_suspicious\",\"feed_ranker_use_user_comment_reaction_cache\":true,\"pub_auto_moderation_enabled\":false,\"disable_live_stream_ai_trimming_by_default\":false,\"recipes_enabled\":false,\"disable_deletion\":false,\"ios_default_coupon_enabled\":false,\"notes_weight_read_post\":5,\"notes_weight_reply\":3,\"livekit_egress_custom_base_url\":\"http://livekit-egress-custom-recorder.s3-website-us-east-1.amazonaws.com\",\"clip_focused_video_upload_flow\":false,\"live_stream_max_guest_users\":2,\"enable_video_seo_data\":false,\"can_reimport_unsubscribed_users_with_2x_optin\":false,\"feed_posts_weight_subscribed\":0,\"included_in_demo_feed\":false,\"live_event_mixin\":\"\",\"review_incoming_email\":\"default\",\"app_install_prompts\":\"native_banner_if_supported\",\"enable_founding_gifts\":false,\"ios_chat_uikit\":false,\"enable_sponsorship_campaigns\":false,\"thread_permalink_preview_min_android_version\":2037,\"tabbed_notes_search\":\"control\",\"default_thumbnail_time\":10,\"pub_ranking_weight_immediate_engagement\":1,\"pub_ranking_weight_retained_engagement\":1,\"load_test_unichat\":false,\"notes_read_post_baseline\":0,\"live_stream_head_alignment_guide\":false,\"show_open_post_as_pdf_button\":false,\"free_press_combo_subscribe_flow_enabled\":false,\"restack_with_image\":false,\"free_press_tabbed_subscribe_flow\":\"control\",\"gift_from_substack_modal\":\"experiment\",\"gifts_from_substack_feature_available\":true,\"disable_ai_clips\":false,\"thefp_enable_web_livestream_kicking\":false,\"enable_elevenlabs_voiceovers\":false,\"use_snowflake_crm_bool\":true,\"android_upgrade_alert_dialog\":true,\"headline_testing_enabled\":true,\"translated_notifications_enabled\":false,\"show_simple_post_editor\":false,\"enable_live_stream_auto_publish_flow\":true,\"social_media_follower_thresholds_for_vitally_tag\":\"5000|5000|5000\",\"search_ranker_query_augmentation\":\"enabled\",\"enable_publication_podcasts_page\":false,\"ios_payment_connection_enabled\":true,\"app_install_reminder_email\":\"experiment\",\"use_landscape_livestream_for_post_draft\":false,\"thefp_enable_dynamic_toaster\":false,\"live_stream_install_app_reminders_enabled\":true,\"use_unified_livestream_workflow\":true,\"thefp_enable_america_250\":true,\"ios_note_composer_settings_enabled\":false,\"android_v2_post_video_player_enabled\":false,\"enable_direct_message_request_bypass\":false,\"enable_apple_news_sync\":false,\"postsById_batch_size\":20,\"banned_image_generation_word_list\":\"nude, naked, unclothed, undressed, withoutclothes, sex, sexy, erotic, topless, bottomless, barechest, barebody, scantilyclad, suggestive, lingerie, bikini, underwear, panties, bra, thong, porn, pornographic, provocative, orgy, fetish, kinky, bdsm, domination, submission, lewd, explicit, genitals, penis, vagina, buttocks, anus, breasts, nipples, areola, privateparts, crotch, pubicarea, thighgap, intercourse, masturbation, ejaculation, penetration, moaning, groping, fondling, exposing, stripping, flashing, adultcontent, XXX, NSFW, OnlyFans, camgirl, escort, prostitute, callgirl, massage, striptease, ass, busty, strip, stripclub, tits, spanking, pawg, bimbo, crotch, succubus, seductive\",\"free_press_newsletter_promo_enabled\":false,\"enable_ios_livestream_stats\":false,\"disable_live_stream_reactions\":false,\"enable_high_follower_dm\":true,\"ios_welcome_video_profile_prompt\":false,\"clip_generation_3rd_party_vendor\":\"internal\",\"ios_notification_settings_enabled\":false,\"notes_weight_negative\":1,\"ios_discover_tab_min_installed_date\":\"2025-06-09T16:56:58+0000\",\"notes_weight_click_see_more\":2,\"edit_profile_theme_colors\":false,\"backend_enable_subscription_bar\":true,\"disable_clipping_for_readers\":false,\"android_enable_subscription_bar\":false,\"apple_fee_percent\":15,\"allow_anonymous_personal_pub_creation\":false,\"feed_posts_weight_reply\":3,\"feed_posts_weight_negative\":5,\"feed_posts_weight_like\":1.5,\"feed_posts_weight_share\":3,\"feed_posts_weight_save\":3,\"enable_press_kit_preview_modal\":false,\"use_snowflake_crm_rollout_percentage\":1,\"feed_posts_weight_sign_up\":4,\"live_stream_video_degradation_preference\":\"maintainFramerate\",\"social_media_follower_thresholds_for_alerts\":\"500000|500000|500000\",\"render_high_quality_clips\":false,\"android_enable_publication_activity_tab\":false,\"pause_app_badges\":false,\"notes_weight_like\":2,\"profile_feed_expanded_inventory\":false,\"phone_verification_fallback_to_twilio\":false,\"livekit_mux_latency_mode\":\"low\",\"feed_posts_weight_long_click\":1,\"feed_juiced_user\":0,\"vertical_video_player_in_feed_1\":\"experiment\",\"show_branded_intro_setting\":true,\"use_growth_stats_tab\":false,\"free_press_single_screen_subscribe_flow_enabled\":false,\"notes_click_see_more_baseline\":0.35,\"android_edit_user_links\":true,\"clear_mux_asset_passthrough_on_livestream_ended_draft\":true,\"android_enable_user_status_ui\":false,\"use_advanced_commerce_api_for_iap\":false,\"skip_free_preview_language_in_podcast_notes\":false,\"larger_wordmark_on_publication_homepage\":false,\"video_editor_full_screen\":false,\"enable_mobile_stats_for_admins\":false,\"ios_profile_themes_note_composer_enabled\":false,\"reduce_post_search_fuzziness\":\"treatment\",\"related_posts_web\":\"experiment\",\"notes_weight_click_item\":3,\"enable_milestone_notifications\":true,\"notes_weight_long_visit\":1,\"bypass_single_unlock_token_limit\":false,\"notes_watch_video_baseline\":0.08,\"social_media_follower_thresholds_for_auto_dm\":\"10000|10000|10000\",\"ios_pymk_subscribe\":\"control\",\"add_section_and_tag_metadata\":false,\"daily_promoted_notes_enabled\":true,\"feed_ranker_use_user_feed_restack_comment_cache\":true,\"enable_islands_cms\":false,\"enable_livestream_combined_stats\":false,\"ios_post_share_assets_notification\":true,\"enable_drip_campaigns\":false,\"ios_offline_mode_enabled\":false,\"post_management_search_engine\":\"elasticsearch\",\"new_bestseller_leaderboard_feed_item_enabled\":false,\"suggested_search_prediction_markets_fetch_disabled\":false,\"enable_account_settings_revamp\":false,\"allowed_email_domains\":\"one\",\"thefp_enable_fp_recirc_block\":false,\"ios_web_subscription_payments\":\"experiment\",\"ios_full_search_results\":\"control\",\"enable_debug_logs_ios\":false,\"show_pub_content_on_profile_for_pub_id\":0,\"use_mux_assets_for_livestream_ended_draft\":true,\"show_pub_content_on_profile\":false,\"livekit_track_egress\":true,\"video_tab_mixture_pattern\":\"npnnnn\",\"enable_theme_contexts\":false,\"onboarding_suggestions_search\":\"experiment\",\"feed_tuner_enabled\":false,\"enable_arr_milestone_notifications\":true,\"enable_pledges_milestone_notifications\":true,\"livekit_mux_latency_mode_rtmp\":\"low\",\"notes_weight_follow_boost\":3,\"web_notes_trending_topics_enabled\":\"control\",\"ios_trending_topics_feed_item\":\"control\",\"accessible_live_stream_end_button\":false,\"daily_promoted_notes_skipped_author_ids\":\"36419707,116060846,310933753,6485460,263729966,44182675,309355742,31686779,48009465,145856307,41359798,69552,213248354,298735086,364097960,321670521,330239969,221511238,320699447,363618587,329004483,228848922,112253164,157953275,257688178,17256371,32320638,174769549,250149022\",\"subscription_bar_top_selection_strategy_v2\":\"destination_wau_pub_score\",\"enable_live_stream_audio_enhancements_flow\":false,\"suggested_search_merges\":null,\"iap_announcement_blog_url\":\"\",\"android_onboarding_progress_persistence\":\"control\",\"dpn_weight_tap_bonus_subscribed\":3,\"ios_custom_buttons_enabled\":true,\"ios_livestream_feedback\":false,\"direct_device_push_notifications_android\":true,\"ios_iap_opt_out_enabled\":false,\"android_view_post_share_assets_employees_only\":false,\"thefp_show_fixed_footer_paywall\":false,\"android_subscription_queue_experiment\":\"experiment\",\"ios_viral_gift_entry_points\":\"treatment\",\"search_ranker_load_test_pct\":20,\"enable_speaker_focus_clips\":false,\"new_dashboard_overview_enabled_experiment\":\"control\",\"ios_subscription_pogs\":\"experiment\",\"dpn_weight_like\":3,\"android_trending_topics_feed_item\":\"control\",\"use_elasticsearch_for_category_tabs\":\"control\",\"enable_subscribers_milestone_notifications\":true,\"android_enable_edit_profile_theme\":false,\"android_enable_view_profile_theme\":false,\"enable_refresh_token_deduplication\":true,\"dpn_weight_follow\":3,\"live_stream_audio_enhancer_v2\":\"auphonic\",\"dpn_weight_reply\":2.5,\"enable_apns_app_badges\":\"treatment\",\"search_ranker_load_test_ranking_window\":2000,\"ios_new_post_sharing_flow_enabled\":false,\"ignore_video_in_notes_length_limit\":false,\"web_show_scores_on_sports_tab\":false,\"notes_weight_click_share\":3,\"direct_device_push_notifications\":false,\"enable_clip_prompt_variant_filtering\":false,\"allow_long_videos\":true,\"dpn_score_threshold\":0,\"thefp_enable_follow_module\":false,\"mailgun_events_backfill_timestamp\":\"2025-04-30 00:00:00\",\"dpn_weight_follow_bonus\":0.5,\"ios_post_subscribe_follow_related\":\"control\",\"use_intro_clip_and_branded_intro_by_default\":false,\"phone_verification_banned_countries\":\"SD, PH, BD, UA, PK, UZ, ID, GW, LB, ECMA, KG, ML, AZ, GT, SN, BZ, EG, MM, VN, ZW, NG, JO, RU, MY, KE, CN, MZ, TZ, MW, ZM, KH, VE, CF, GH, GA, AO, BF, SY, TJ, KW, CI, KM, PS, IL, BI, LY, ET, TL, HN, BG, MG, CU, IR, GN, UG, SI, GW, LB, EC, TG, AF\",\"publisher_banner\":\"\",\"new_user_subscribe_follow_prompt_override\":\"none\",\"iap_broad_launch_enabled\":true,\"dpn_weight_open\":2.5,\"ios_subscription_pogs_new_users\":\"experiment\",\"ios_subscription_pogs_old_users\":\"experiment\",\"android_subscription_queue_experiment_2\":\"experiment\",\"enable_viewing_all_livestream_viewers\":false,\"serve_suggested_searches_table\":false,\"post_share_assets_notification\":\"experiment\",\"dpn_ranking_enabled\":true,\"sequential_retrieval_model_pct\":100,\"daily_promoted_notes_banned_keywords\":\"\",\"admin_deleted_user_search_enabled\":true,\"dpn_model_variant\":\"experiment\",\"show_deleted_comments_in_underground\":true,\"ios_notification_popup_cta\":\"control\",\"dashboard_payments_tab\":true,\"skip_default_welcome_email_for_app_users\":\"control\",\"dpn_weight_long_session\":2.5,\"dpn_weight_tap\":3,\"android_vertical_post_player\":\"control\",\"new_note_communication_notification_experiment\":\"control\",\"blocked_email_domains\":\"nastyx.com,heweek.com,marchub.com,wesolar.io,cetnob.com,asaud.com,sigmazon.com,ofionk.com,degcos.com,janfab.com,obisims.com,esterace.com,barakal.com,coloruz.com,rogtat.com,ploncy.com,konetas.com,pelagius.net,teeuk.com,laafd.com,vjuum.com,txcct.com,rteet.com,dpptd.com,funvahnuwa.com,btcmod.com,vtext.com,tmomail.net,txt.att.net,vzwpix.com,mms.att.net,mymetropcs.com,messaging.sprintpcs.com,txt.bell.ca,mms.cricketwireless.net,msg.telus.com,pm.sprint.com,deliverydaily.org,allfreemail.net,gufum.com,yopmail.com,mailshan.com,reybenz.com,any.pink,cmail.asia,tempmailt.com,t-mail.asia,temp-mail.asia,otprmail.com,umail.asia,pmail.asia,enrmail.com,neert.com,okyre.com,ston-drop.com,ficbook.sbs,findw.cfd,fnisaojcsdijc.cc,fsadcsdcas.cc,grtsfedmoxksc.one,nvodoasods.cc,rtefadwsazc.cc,stobma.one,findw.cfd,a1.findw.cfd,a2.ston-drop.com,mdhnzsqo.findw.cfd,qrfxaqcc.findw.cfd,dksyl.findw.cfd,dbsoexv.findw.cfd\",\"enable_notes_admins\":false,\"suggested_search_exclusions\":\"synthetic biology wifi claims,Aminus3 Aquatic photo prompt,photography,ivermectin cancer treatment controversy,William Makis cancer treatment claims,Podcast Movement 2025,2025 tech layoffs AI,NatSocToday antisemitic Substack posts,NatSocToday antisemitic controversy,natsoctoday,natsoc,Nazi apologism online backlash,nerd reich\",\"maximum_affinity_index_for_trending_topic_notification\":5,\"suggested_search_notifications\":\"experiment\",\"animate_all_explore_video_suggestions\":true,\"android_synchronous_push_notif_handling\":\"experiment\",\"android_vertical_post_player_2\":\"experiment\",\"suggested_search_metadata_web_market_ui\":false,\"dpn_weight_restack\":2,\"use_new_snowflake_user_rollout_percentage\":1,\"google_partner_data_rollout_percentage\":100,\"ios_auto_advance_short_form_video\":\"control\",\"session_version_invalidation_enabled\":false,\"suggested_searches\":\"\",\"dpn_weight_negative\":1},\"publicationSettings\":null,\"publicationUserSettings\":null,\"userSettings\":{\"user_id\":null,\"activity_likes_enabled\":true,\"artist_mode_enabled\":false,\"dashboard_nav_refresh_enabled\":false,\"hasDismissedSectionToNewsletterRename\":false,\"is_guest_post_enabled\":true,\"feed_web_nux_seen_at\":null,\"has_seen_select_to_restack_tooltip_nux\":false,\"invite_friends_nux_dismissed_at\":null,\"suggestions_feed_item_last_shown_at\":null,\"has_seen_select_to_restack_modal\":false,\"last_home_tab\":null,\"last_notification_alert_shown_at\":null,\"disable_reply_hiding\":false,\"newest_seen_chat_item_published_at\":null,\"explicitContentEnabled\":false,\"contactMatchingEnabled\":false,\"messageRequestLevel\":\"everyone\",\"liveStreamAcceptableInviteLevel\":\"everyone\",\"liveStreamAcceptableChatLevel\":\"everyone\",\"creditTokensTreatmentExposed\":false,\"appBadgeIncludesChat\":false,\"autoPlayVideo\":true,\"smart_delivery_enabled\":false,\"chatbotTermsLastAcceptedAt\":null,\"has_seen_notes_post_app_upsell\":false,\"substack_summer_nux_dismissed_at\":null,\"first_note_id\":null,\"show_concurrent_live_stream_viewers\":false,\"has_dismissed_fp_download_pdf_nux\":false,\"edit_profile_feed_item_dismissed_at\":null,\"mobile_permalink_app_upsell_seen_at\":null,\"new_user_checklist_enabled\":false,\"new_user_follow_subscribe_prompt_dismissed_at\":null,\"has_seen_youtube_shorts_auto_publish_announcement\":false,\"notificationQualityFilterEnabled\":true,\"hasSeenOnboardingNewslettersScreen\":false},\"subscriberCountDetails\":null,\"mux_env_key\":\"u42pci814i6011qg3segrcpp9\",\"sentry_environment\":\"production\",\"launchWelcomePage\":false,\"pendingInviteForActiveLiveStream\":null,\"features\":{},\"browser\":{},\"showCookieBanner\":false,\"disabledCookies\":[],\"dd_env\":\"prod\",\"dd_ti\":true}")</script>
+        <script>window._analyticsConfig = JSON.parse("{\"properties\":{\"subdomain\":null,\"has_plans\":false,\"pub_community_enabled\":false,\"is_personal_publication\":false,\"is_subscribed\":false,\"is_free_subscribed\":false,\"is_author\":false,\"is_contributor\":false,\"is_admin\":false,\"is_founding\":false},\"localGaPixelId\":\"G-TLW0DF6G5V\",\"adwordsAccountId\":\"AW-316245675\",\"adwordsEventSendTo\":\"Tf76CKqcyL4DEKuN5pYB\"}")</script>
+
+        
+        
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/9541.09e3cfee.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/3420.f7bbbeb8.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/2902.e1c42363.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/3232.c5b88d12.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/4934.08673b69.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/8588.512ad926.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/5688.46e4d819.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/5589.7b96fbc4.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/7110.abc49597.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/9672.b42ca107.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/5684.c044763b.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/985.d1825d03.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/3682.c632f0cb.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/275.161a69a8.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/6997.a283e0d7.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/857.cf507103.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/9635.45bf0cb0.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/7481.7479951d.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/2552.985472c8.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/1397.b6aae66b.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/8052.251480b5.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/3794.6d989bd0.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/4490.70115a71.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/6563.9442dcdf.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/3385.b9cd1a5a.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/3767.e1916db7.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/9620.3b8e6719.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/6521.2f2a0b0f.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/8656.5248286c.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/949.3b625330.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/2307.dbb9d847.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/3565.0492a658.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/5270.0d2ab744.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/1642.e0333674.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/76.68b85afd.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/7517.b77c988d.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/substack.f4725a7e.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/6877.8e2632b0.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/7096.d2b804a8.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/6590.693adbe5.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/2044.ab7381aa.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/2989.790c13d0.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/1484.8ed70740.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/839.4dea1cf0.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/5090.927a5e05.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/8041.0e22e6a7.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/6247.078b07a1.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/1262.33c17ad0.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/9075.940e1715.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/627.034545c0.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/7752.7e050aa8.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/6240.b8a7d1c2.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/8549.fea65baf.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/2754.a581cb5f.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/3942.b1134fa5.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/8101.052f9001.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/4665.6d2d4689.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/7988.07a2af4f.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/807.48d81c43.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/2658.e96896b2.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/565.a55f1176.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/4283.cb3bd710.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/5924.96135785.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/2035.58660d40.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/9395.fb11ec9b.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/2889.e27ae69a.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/6566.5fd21797.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/9493.ce58f53f.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/546.1e81f03f.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/9760.3b93fbba.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/7065.18c0dbcf.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/5420.5bcfb0c7.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/8038.010acf71.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/5397.c8c11817.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/9863.8c7b93d1.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/9341.21805038.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/7727.8712c718.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/6452.70068dad.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/3505.cb546670.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/6304.a0fc6343.js" charset="utf-8"></script>
+            
+                <script defer src="https://substackcdn.com/bundle/static/js/7408.727101ad.js" charset="utf-8"></script>
+            
+        
+        <script nomodule>
+            (function() {
+                var message = 'Your browser does not support modern JavaScript modules. Please upgrade your browser for the best experience.';
+                var warningDiv = document.createElement('div');
+                warningDiv.style.color = 'red';
+                warningDiv.style.padding = '10px';
+                warningDiv.style.margin = '10px 0';
+                warningDiv.style.border = '1px solid red';
+                warningDiv.style.backgroundColor = 'lightyellow';
+                warningDiv.innerText = message;
+                document.body.prepend(warningDiv);
+            })();
+        </script>
+
+        
+            <!-- Datadog Analytics -->
+            <script>
+              (function(h,o,u,n,d) {
+                h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+                d=o.createElement(u);d.async=1;d.src=n
+                n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+              })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js','DD_RUM')
+              window.DD_RUM.onReady(function() {
+                window.DD_RUM.init({
+                  clientToken: 'puba71073f072643721169b68f352438710',
+                  applicationId: '2e321b35-c76b-4073-8d04-cc9a10461793',
+                  site: 'datadoghq.com',
+                  service: 'substack-web',
+                  env: window._preloads.dd_env,
+                  version: '67a2ad5a36b0e2258d3caadc7863207358ff12f6',
+                  sessionSampleRate: 1,
+                  sessionReplaySampleRate: 100,
+                  trackUserInteractions: window._preloads.dd_ti,
+                  trackResources: true,
+                  trackLongTasks: true,
+                  defaultPrivacyLevel: 'mask-user-input',
+                  allowedTracingUrls: [/https?:\/\/(.+\/.)?substack(cdn)?\.com/]
+                });
+              })
+            </script>
+            <!-- End Datadog Analytics -->
+
+            <!-- Cloudflare Web Analytics -->
+            <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "216309cffb464db4b0e02daf0b8e8060"}'></script>
+            <!-- End Cloudflare Web Analytics -->
+        
+
+        <!-- Fallback tracking pixels -->
+        
+
+        
+
+        <noscript>
+    <style>
+        #nojs-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 16px 16px 16px 32px;
+            width: 100%;
+            box-sizing: border-box;
+            background: red;
+            color: white;
+            font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 13px;
+            line-height: 13px;
+        }
+        #nojs-banner a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    </style>
+
+    <div id="nojs-banner">
+        This site requires JavaScript to run correctly. Please <a href="https://enable-javascript.com/" target="_blank">turn on JavaScript</a> or unblock scripts
+    </div>
+</noscript>
+
+
+        
+
+        
+
+        
+        
+    </body>
+</html>
