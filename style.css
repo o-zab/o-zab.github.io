@@ -2734,9 +2734,113 @@ body.dark-mode .skill-tag {
     .slider-nav {
         padding: 0 0.5rem;
     }
+
+    /* Experience section responsive */
+    #experience {
+        padding: 2rem 1rem;
+    }
+
+    .timeline {
+        max-width: 100%;
+        padding: 1rem 0;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content,
+    .timeline-item:nth-child(odd) .timeline-content {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-marker {
+        left: 20px;
+        top: 15px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    .timeline-header h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-duration {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .timeline-company {
+        font-size: 0.8rem;
+    }
+
+    .timeline-description li {
+        font-size: 0.8rem;
+    }
+
+    .section__text_p1 {
+        font-size: 1.2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
+    #experience {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .timeline-content {
+        padding: 0.8rem;
+    }
+
+    .timeline-header h3 {
+        font-size: 0.9rem;
+    }
+
+    .timeline-duration {
+        font-size: 0.6rem;
+        padding: 0.15rem 0.5rem;
+    }
+
+    .timeline-company {
+        font-size: 0.75rem;
+    }
+
+    .timeline-description li {
+        font-size: 0.75rem;
+    }
+
+    .section__text_p1 {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .timeline-marker {
+        width: 14px;
+        height: 14px;
+        top: 12px;
+    }
+
+    .timeline::before {
+        width: 1.5px;
+    }
+
     #skills {
         padding: 3rem 1rem;
     }
