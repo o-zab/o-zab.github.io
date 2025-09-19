@@ -1,4 +1,3 @@
-
 // Hamburger Toggle
 function toggleMenu() {
   const icon = document.querySelector(".hamburger-icon");
@@ -77,19 +76,19 @@ function filterProjects(category) {
     });
 }
 
-// Theme toggle functionality
 function toggleTheme() {
     document.body.classList.toggle('dark-mode');
     localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
 }
 
-// Load saved theme on page load and initialize skills slider
 document.addEventListener('DOMContentLoaded', function() {
-    if (localStorage.getItem('darkMode') === 'true') {
+    // Make dark mode the default unless explicitly set to false
+    if (localStorage.getItem('darkMode') !== 'false') {
         document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
     }
 
-    // Skills Slider Logic
     initializeSkillsSlider();
 });
 
