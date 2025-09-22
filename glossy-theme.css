@@ -343,13 +343,14 @@ img[loading="lazy"]{ will-change: transform, opacity; transition: opacity .4s ea
 
   .hamburger-wrapper { display:flex !important; justify-content:flex-end !important; width:100% !important; padding:0 16px !important; }
 
-  /* Mobile menu panel (left full-screen drawer) */
-  /* The drawer is fixed, full-height, off-canvas to the left by default and slides in when .open */
+  /* Mobile menu panel (left drawer that fits content) */
+  /* The drawer is fixed, auto-height, off-canvas to the left by default and slides in when .open */
   .menu-links {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
-    height: 100vh !important;
+    height: auto !important;
+    min-height: 100vh !important; /* ensure minimum height covers viewport */
     width: 92vw !important; /* leave a thin gutter on the right on larger phones */
     max-width: 420px !important; /* cap width for tablets */
     display: block !important; /* defensive: ensure not hidden by older rules */
@@ -459,7 +460,10 @@ img[loading="lazy"]{ will-change: transform, opacity; transition: opacity .4s ea
 .sr-only{ position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; border: 0 !important; }
 
 /* Focus styles for keyboard users */
-.hamburger-icon:focus, .menu-close:focus, .menu-links a:focus, .nav-links a:focus { outline: 3px solid rgba(37,99,235,0.18) !important; outline-offset: 2px !important; }
+.menu-close:focus, .menu-links a:focus, .nav-links a:focus { outline: 3px solid rgba(37,99,235,0.18) !important; outline-offset: 2px !important; }
+
+/* Remove focus outline from hamburger icon */
+.hamburger-icon:focus { outline: none !important; }
 }
 
 /* Blog Section Dark Theme Overrides */

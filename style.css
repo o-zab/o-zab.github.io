@@ -235,9 +235,24 @@ a {
 }
 
 .hamburger-icon span:first-child {
-    transform: none;
+    transform: none !important;
     opacity: 1;
-    transform: none;
+}
+
+.hamburger-icon span:nth-child(2) {
+    opacity: 1;
+}
+
+.hamburger-icon span:last-child {
+    transform: none !important;
+}
+
+/* Ensure hamburger icon resets properly when not in open state */
+.hamburger-icon:not(.open) span:first-child,
+.hamburger-icon:not(.open) span:nth-child(2),
+.hamburger-icon:not(.open) span:last-child {
+    transform: none !important;
+    opacity: 1;
 }
 
 

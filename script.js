@@ -10,19 +10,42 @@ function toggleMenu() {
         return;
     }
 
-    if (icon) icon.classList.toggle("open");
-    if (menu) menu.classList.toggle("open");
-    if (scrim) scrim.classList.toggle('active');
+    const isOpen = menu ? menu.classList.contains('open') : false;
+
+    if (icon) {
+        icon.classList.toggle("open");
+        // Clear any forced styles when toggling
+        if (isOpen) {
+            icon.style.transform = '';
+            icon.style.webkitTransform = '';
+        }
+    }
+    if (menu) {
+        menu.classList.toggle("open");
+        // Clear any forced styles when toggling
+        if (isOpen) {
+            menu.style.transform = '';
+            menu.style.webkitTransform = '';
+        }
+    }
+    if (scrim) {
+        scrim.classList.toggle('active');
+        // Clear any forced styles when toggling
+        if (isOpen) {
+            scrim.style.display = '';
+            scrim.style.webkitDisplay = '';
+        }
+    }
 
     // ARIA updates and announcement
     const announcer = document.getElementById('a11y-announcer');
-    const isOpen = menu ? menu.classList.contains('open') : false;
-    if (icon) icon.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    const newIsOpen = menu ? menu.classList.contains('open') : false;
+    if (icon) icon.setAttribute('aria-expanded', newIsOpen ? 'true' : 'false');
     if (menu) {
-        menu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
-        menu.setAttribute('aria-modal', isOpen ? 'true' : 'false');
+        menu.setAttribute('aria-hidden', newIsOpen ? 'false' : 'true');
+        menu.setAttribute('aria-modal', newIsOpen ? 'true' : 'false');
     }
-    if (announcer) announcer.textContent = isOpen ? 'Navigation menu opened' : 'Navigation menu closed';
+    if (announcer) announcer.textContent = newIsOpen ? 'Navigation menu opened' : 'Navigation menu closed';
 }
 
 
@@ -31,13 +54,33 @@ function closeMenu() {
     const icon = document.querySelector(".hamburger-icon");
     const menu = document.querySelector(".menu-links");
     const scrim = document.getElementById('menuScrim');
+
     // Defensive close: only touch elements that exist
-    if (icon && icon.classList) icon.classList.remove('open');
-    if (menu && menu.classList) menu.classList.remove('open');
-    if (scrim && scrim.classList) scrim.classList.remove('active');
+    if (icon && icon.classList) {
+        icon.classList.remove('open');
+        // Force removal of any lingering open state
+        icon.style.transform = '';
+        icon.style.webkitTransform = '';
+    }
+    if (menu && menu.classList) {
+        menu.classList.remove('open');
+        // Force removal of any lingering open state
+        menu.style.transform = '';
+        menu.style.webkitTransform = '';
+    }
+    if (scrim && scrim.classList) {
+        scrim.classList.remove('active');
+        // Force removal of any lingering active state
+        scrim.style.display = '';
+        scrim.style.webkitDisplay = '';
+    }
+
     const announcer = document.getElementById('a11y-announcer');
     if (icon) icon.setAttribute('aria-expanded', 'false');
-    if (menu) { menu.setAttribute('aria-hidden', 'true'); menu.setAttribute('aria-modal', 'false'); }
+    if (menu) {
+        menu.setAttribute('aria-hidden', 'true');
+        menu.setAttribute('aria-modal', 'false');
+    }
     if (announcer) announcer.textContent = 'Navigation menu closed';
 }
 
