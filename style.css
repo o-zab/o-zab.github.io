@@ -11,7 +11,7 @@ body {
     font-size: clamp(14px, 2.5vw, 16px);
     line-height: 1.6;
 }
-
+  
 html {
     scroll-behavior: smooth;
 }
