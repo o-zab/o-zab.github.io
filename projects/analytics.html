@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="../mediaqueries.css">
+    <link rel="stylesheet" href="../glossy-theme.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
@@ -28,17 +29,20 @@
             <li><a href="../index.html#contact">Contact</a></li>
         </ul>
     </nav>
+    <div id="menuScrim" class="menu-drawer-scrim" onclick="closeMenu()"></div>
+    <div id="a11y-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
     <!-- Hamburger Navbar -->
     <nav id="hamburger-nav">
         <div class="hamburger-wrapper">
             <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
+                <div class="hamburger-icon" onclick="toggleMenu()" role="button" tabindex="0" aria-expanded="false" aria-controls="menuLinks">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <div class="menu-links">
+                <div class="menu-links" id="menuLinks" role="dialog" aria-modal="false" aria-hidden="true">
+                    <button class="menu-close" aria-label="Close menu" onclick="closeMenu()">✕</button>
                     <li><a href="../index.html" onclick="toggleMenu()">Home</a></li>
                     <li><a href="../index.html#projects" onclick="toggleMenu()">Projects&nbsp;&amp;&nbsp;Blogs</a></li>
                     <li><a href="../index.html#experience" onclick="toggleMenu()">Tools&nbsp;&amp;&nbsp;Skills</a></li>

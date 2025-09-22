@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="new-styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="glossy-theme.css">
 
     <!-- EmailJS Library -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -69,27 +70,31 @@
             <li><a href="#top">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="experience.html">Experience</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <div id="menuScrim" class="menu-drawer-scrim" onclick="closeMenu()"></div>
+    <div id="a11y-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
     <!-- Hamburger Navbar -->
     <nav id="hamburger-nav">
         <div class="hamburger-wrapper">
             <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
+                <div class="hamburger-icon" onclick="toggleMenu()" role="button" tabindex="0" aria-expanded="false" aria-controls="menuLinks">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <div class="menu-links">
+                <div class="menu-links" id="menuLinks" role="dialog" aria-modal="false" aria-hidden="true">
+                    <button class="menu-close" aria-label="Close menu" onclick="closeMenu()">✕</button>
                     <li><a href="#top" onclick="toggleMenu()">Home</a></li>
                     <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                     <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
                     <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
                     <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
@@ -99,11 +104,7 @@
         </div>
     </nav>
 
-    <!-- Floating Theme Toggle -->
-    <div class="theme-toggle" onclick="toggleTheme()">
-        <span class="sun">☀️</span>
-        <span class="moon">🌙</span>
-    </div>
+
 
     <!-- Profile Section -->
     <section id="profile">
@@ -111,17 +112,17 @@
                 <img src="./assets/profile.png" alt="Zablon Owino profile photo" loading="lazy">
             </div>
             <div class="section__text">
-                <p class="section__text_p1">Hello, I'm</p>
+                <p class="section__text_p1">Hey, I'm</p>
                 <h1 class="title" itemscope itemtype="https://schema.org/Person">
                     <span itemprop="name">Zablon Owino</span>
                 </h1>
                 <p class="static-title">Data Specialist</p>
                 <div class="btn_container">
                     <button class="btn btn-color-2" onclick="window.location.href='https://drive.google.com/uc?export=download&id=1ERelEmOjb6aAWUlHKCrFiYV35qAF_pmv'">
-                        Resume
+                    Download Resume
                     </button>
                     <button class="btn btn-color-1" onclick="location.href='#contact'">
-                        Contact Me
+                    Get in Touch
                     </button>
                 </div>
                 <div id="socials_container">
@@ -152,21 +153,25 @@
                 <img src="./assets/Analytics&Bi.png" alt="Analytics & BI Preview" class="category-preview">
                 <h3>Analytics & BI</h3>
                 <p>Business intelligence and data analysis projects delivering actionable insights</p>
+                <span class="category-cta" aria-hidden="true">View projects</span>
             </a>
             <a href="projects/science.html" class="category-card">
                 <img src="./assets/Machinelearning&AI.png" alt="Machine Learning & AI Preview" class="category-preview">
                 <h3>Machine Learning & AI</h3>
                 <p>AI-powered solutions and predictive modeling for various industries</p>
+                <span class="category-cta" aria-hidden="true">View projects</span>
             </a>
             <a href="projects/engineering.html" class="category-card">
                 <img src="./assets/cloud-data-engineer.webp" alt="Data Engineering & Cloud Preview" class="category-preview">
                 <h3>Data Engineering & Cloud</h3>
                 <p>Scalable data pipelines and cloud infrastructure solutions</p>
+                <span class="category-cta" aria-hidden="true">View projects</span>
             </a>
             <a href="iot.html" class="category-card">
                 <img src="./assets/Iot&RealtimeSystems.webp" alt="IoT & Real-time Systems Preview" class="category-preview">
                 <h3>IoT & Real-time Systems</h3>
                 <p>Real-time data processing and IoT applications</p>
+                <span class="category-cta" aria-hidden="true">View projects</span>
             </a>
         </div>
 
@@ -312,7 +317,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="card">
-                        <h2 class="experience-sub-title">Data Analysis & Visualization</h2>
+                        <h2 class="skills-sub-title">Data Analysis & Visualization</h2>
                         <div class="logo-container">
                             <img src="./assets/python_logo.png" alt="Python" class="logo-img">
                             <img src="./assets/pandas_logo.png" alt="Pandas" class="logo-img">
@@ -326,7 +331,7 @@
 
                 <div class="swiper-slide">
                     <div class="card">
-                        <h2 class="experience-sub-title">Data Engineering</h2>
+                        <h2 class="skills-sub-title">Data Engineering</h2>
                         <div class="logo-container">
                             <img src="./assets/pyspark_logo.png" alt="Apache Spark" class="logo-img">
                             <img src="./assets/kafka_logo.png" alt="Kafka" class="logo-img">
@@ -339,7 +344,7 @@
 
                 <div class="swiper-slide">
                     <div class="card">
-                        <h2 class="experience-sub-title">Machine Learning & AI</h2>
+                        <h2 class="skills-sub-title">Machine Learning & AI</h2>
                         <div class="logo-container">
                             <img src="./assets/scikitlearn_logo.png" alt="Scikit-learn" class="logo-img">
                             <img src="./assets/tensorflow_logo.png" alt="TensorFlow" class="logo-img">
@@ -350,7 +355,7 @@
 
                 <div class="swiper-slide">
                     <div class="card">
-                        <h2 class="experience-sub-title">Cloud & DevOps</h2>
+                        <h2 class="skills-sub-title">Cloud & DevOps</h2>
                         <div class="logo-container">
                             <img src="./assets/aws_logo.png" alt="AWS" class="logo-img">
                             <img src="./assets/gcp_logo.png" alt="Google Cloud" class="logo-img">
@@ -362,7 +367,7 @@
 
                 <div class="swiper-slide">
                     <div class="card">
-                        <h2 class="experience-sub-title">Programming & Tools</h2>
+                        <h2 class="skills-sub-title">Programming & Tools</h2>
                         <div class="logo-container">
                             <img src="./assets/r_logo.png" alt="R" class="logo-img">
                             <img src="./assets/fastapi_logo.png" alt="FastAPI" class="logo-img">
@@ -373,7 +378,7 @@
 
                 <div class="swiper-slide">
                     <div class="card">
-                        <h2 class="experience-sub-title">Big Data</h2>
+                        <h2 class="skills-sub-title">Big Data</h2>
                         <div class="logo-container">
                             <img src="./assets/hadoop_logo.png" alt="Hadoop" class="logo-img">
                             <img src="./assets/databricks_logo.png" alt="Databricks" class="logo-img">
@@ -384,7 +389,7 @@
 
                 <div class="swiper-slide">
                     <div class="card">
-                        <h2 class="experience-sub-title">Statistics & R</h2>
+                        <h2 class="skills-sub-title">Statistics & R</h2>
                         <div class="logo-container">
                             <img src="./assets/rstudio_logo.png" alt="RStudio" class="logo-img">
                             <img src="./assets/spss_logo.png" alt="SPSS" class="logo-img">
@@ -394,7 +399,7 @@
 
                 <div class="swiper-slide">
                     <div class="card">
-                        <h2 class="experience-sub-title">Databases</h2>
+                        <h2 class="skills-sub-title">Databases</h2>
                         <div class="logo-container">
                             <img src="./assets/mysql_logo.png" alt="MySQL" class="logo-img">
                             <img src="./assets/postgresql_logo.png" alt="PostgreSQL" class="logo-img">
@@ -407,7 +412,7 @@
 
                 <div class="swiper-slide">
                     <div class="card">
-                        <h2 class="experience-sub-title">Web Development</h2>
+                        <h2 class="skills-sub-title">Web Development</h2>
                         <div class="logo-container">
                             <img src="./assets/flask_logo.png" alt="Flask" class="logo-img">
                             <img src="./assets/nginx_logo.png" alt="Nginx" class="logo-img">
@@ -463,89 +468,6 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <p class="section__text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Data Specialist</h3>
-                        <span class="timeline-duration">July 2025 – Present</span>
-                    </div>
-                    <div class="timeline-company">Freelance</div>
-                    <div class="timeline-description">
-                        <ul>
-                            <li>Partnered with small businesses and startups to design and implement data-driven solutions for decision support.</li>
-                            <li>Built automated reporting tools in Python and Excel, reducing manual reporting effort by up to 60%.</li>
-                            <li>Developed Power BI and Tableau dashboards to visualize sales, marketing, and financial KPIs, enabling faster strategic decisions.</li>
-                            <li>Conducted exploratory data analysis (EDA) on customer and operational data, uncovering insights that improved efficiency and profitability.</li>
-                            <li>Provided guidance on data management best practices, ensuring data quality, integrity, and usability across client systems.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Data Analyst Intern</h3>
-                        <span class="timeline-duration">May 2025 – June 2025</span>
-                    </div>
-                    <div class="timeline-company">Deloitte Australia</div>
-                    <div class="timeline-description">
-                        <ul>
-                            <li>Built 3 interactive Tableau dashboards that improved visibility of financial trends for business managers.</li>
-                            <li>Classified and analyzed 5,000+ records in Excel, generating actionable insights for forensic technology use cases.</li>
-                            <li>Delivered data-driven recommendations from simulations, demonstrating ability to translate analytics into business decisions.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Data Analyst Intern</h3>
-                        <span class="timeline-duration">May 2025 – July 2025</span>
-                    </div>
-                    <div class="timeline-company">Future Interns</div>
-                    <div class="timeline-description">
-                        <ul>
-                            <li>Cleaned and analyzed 100K+ real-world records using Python, SQL, and Excel, uncovering trends that informed decision-making.</li>
-                            <li>Automated exploratory analysis workflows, reducing analysis time by 40%.</li>
-                            <li>Presented insights through data storytelling sessions to non-technical audiences, improving understanding of business intelligence metrics.</li>
-                            <li>Collaborated with mentors on performance-tracking projects that strengthened business reporting accuracy.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>IT Systems & Infrastructure Engineer (Attachee)</h3>
-                        <span class="timeline-duration">May 2023 – Aug 2023</span>
-                    </div>
-                    <div class="timeline-company">Masinde Muliro University of Science and Technology</div>
-                    <div class="timeline-description">
-                        <ul>
-                            <li>Configured and maintained computer hardware and networks for 200+ users across the university.</li>
-                            <li>Supported server administration tasks, including user account setup and file management, improving system reliability.</li>
-                            <li>Resolved 30+ IT support requests weekly, reducing downtime for staff and students.</li>
-                            <li>Assisted in developing small software utilities, gaining practical software development experience.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- About Section -->
     <section id="about">
@@ -599,7 +521,7 @@
                 </div>
                 <div class="blog-content">
                     <div class="blog-meta">
-                        <span class="blog-date">March 15, 2024</span>
+                        <span class="blog-date">September 15, 2025</span>
                         <span class="blog-read-time">8 min read</span>
                     </div>
                     <h3>Building Scalable Data Lakes on AWS and GCP: A Comprehensive Guide</h3>
@@ -622,7 +544,7 @@
                 </div>
                 <div class="blog-content">
                     <div class="blog-meta">
-                        <span class="blog-date">February 28, 2024</span>
+                        <span class="blog-date">September 15, 2025</span>
                         <span class="blog-read-time">12 min read</span>
                     </div>
                     <h3>DataOps: Streamlining Data Engineering Workflows for Faster Insights</h3>
@@ -641,27 +563,7 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <div class="swiper testimonials-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide testimonial-slide">
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                        <p class="testimonial-quote">"Zablon transformed our data infrastructure completely. His expertise in building scalable pipelines saved us countless hours and improved our decision-making process significantly."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide testimonial-slide">
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                        <p class="testimonial-quote">"Working with Zablon was a game-changer for our analytics capabilities. His ML models increased our customer retention by 25% and provided actionable insights we never had before."</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -710,6 +612,7 @@
                 <ul class="footer-links">
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="experience.html">Experience</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                 </ul>

@@ -1,24 +1,133 @@
 // Hamburger Toggle
 function toggleMenu() {
-  const icon = document.querySelector(".hamburger-icon");
-  const menu = document.querySelector(".menu-links");
-  icon.classList.toggle("open");
-  menu.classList.toggle("open");
+    const icon = document.querySelector(".hamburger-icon");
+    const menu = document.querySelector(".menu-links");
+    const scrim = document.getElementById('menuScrim');
+
+    // Defensive guards: avoid throwing if markup changes or script runs early
+    if (!icon && !menu) {
+        // Nothing to toggle
+        return;
+    }
+
+    if (icon) icon.classList.toggle("open");
+    if (menu) menu.classList.toggle("open");
+    if (scrim) scrim.classList.toggle('active');
+
+    // ARIA updates and announcement
+    const announcer = document.getElementById('a11y-announcer');
+    const isOpen = menu ? menu.classList.contains('open') : false;
+    if (icon) icon.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    if (menu) {
+        menu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        menu.setAttribute('aria-modal', isOpen ? 'true' : 'false');
+    }
+    if (announcer) announcer.textContent = isOpen ? 'Navigation menu opened' : 'Navigation menu closed';
 }
 
 
-// Close Hamburger Menu on Outside Click
-document.addEventListener("click", function (event) {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  const hamburgerMenu = document.querySelector(".hamburger-menu");
+// Close Hamburger Menu helpers (use scrim for outside click handling)
+function closeMenu() {
+    const icon = document.querySelector(".hamburger-icon");
+    const menu = document.querySelector(".menu-links");
+    const scrim = document.getElementById('menuScrim');
+    // Defensive close: only touch elements that exist
+    if (icon && icon.classList) icon.classList.remove('open');
+    if (menu && menu.classList) menu.classList.remove('open');
+    if (scrim && scrim.classList) scrim.classList.remove('active');
+    const announcer = document.getElementById('a11y-announcer');
+    if (icon) icon.setAttribute('aria-expanded', 'false');
+    if (menu) { menu.setAttribute('aria-hidden', 'true'); menu.setAttribute('aria-modal', 'false'); }
+    if (announcer) announcer.textContent = 'Navigation menu closed';
+}
 
-  // Check if the menu is open and the click is outside the hamburger menu
-  if (menu.classList.contains("open") && !hamburgerMenu.contains(event.target)) {
-    menu.classList.remove("open");
-    icon.classList.remove("open");
-  }
+// Close menu when clicking outside via scrim click (scrim element handles it). For safety, handle Esc key.
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeMenu();
+    }
 });
+
+// Make hamburger keyboard-activatable (Enter / Space)
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger-icon');
+    if (!hamburger) return;
+    hamburger.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleMenu();
+        }
+    });
+});
+
+// Focus trap for the mobile drawer
+(function() {
+    let lastFocused = null;
+    let activeTrap = false;
+
+    function getFocusable(container) {
+        if (!container) return [];
+        return Array.from(container.querySelectorAll('a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])'))
+            .filter(el => !el.hasAttribute('disabled') && !el.getAttribute('aria-hidden'));
+    }
+
+    // When the menu opens, call this to trap focus
+    function activateTrap() {
+        const menu = document.querySelector('.menu-links');
+        if (!menu) return;
+        lastFocused = document.activeElement;
+        const focusables = getFocusable(menu);
+        if (focusables.length) {
+            focusables[0].focus();
+        } else {
+            // focus the close button if nothing else
+            const closeBtn = menu.querySelector('.menu-close');
+            if (closeBtn) closeBtn.focus();
+        }
+        activeTrap = true;
+    }
+
+    function deactivateTrap() {
+        activeTrap = false;
+        if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+        lastFocused = null;
+    }
+
+    // Observe menu open/close via MutationObserver to activate/deactivate trap
+    const menu = document.querySelector('.menu-links');
+    if (menu) {
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(m => {
+                if (m.attributeName === 'class') {
+                    const isOpen = menu.classList.contains('open');
+                    if (isOpen) activateTrap(); else deactivateTrap();
+                }
+            });
+        });
+        observer.observe(menu, { attributes: true });
+    }
+
+    // Keyboard handling while trap active
+    document.addEventListener('keydown', function(e) {
+        if (!activeTrap) return;
+        if (e.key === 'Tab') {
+            const focusables = getFocusable(document.querySelector('.menu-links'));
+            if (focusables.length === 0) {
+                e.preventDefault();
+                return;
+            }
+            const first = focusables[0];
+            const last = focusables[focusables.length - 1];
+            if (e.shiftKey && document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+            }
+        }
+    });
+})();
 
 
 // Scroll Behavior for Both Navbars
@@ -76,19 +185,9 @@ function filterProjects(category) {
     });
 }
 
-function toggleTheme() {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-}
+
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Make dark mode the default unless explicitly set to false
-    if (localStorage.getItem('darkMode') !== 'false') {
-        document.body.classList.add('dark-mode');
-    } else {
-        document.body.classList.remove('dark-mode');
-    }
-
     initializeSkillsSlider();
 });
 
